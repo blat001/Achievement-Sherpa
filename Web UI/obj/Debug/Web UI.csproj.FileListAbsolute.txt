@@ -1,0 +1,24 @@
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\Web UI.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\Web UI.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\Simple Achievement Parser.exe
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\HtmlAgilityPack.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\SmartThreadPool.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\Simple Achievement Parser.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\HtmlAgilityPack.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\HtmlAgilityPack.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\obj\Debug\Web UI.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\obj\Debug\Web UI.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\StructureMap.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\StructureMap.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\StructureMap.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\AchievementSherpa.Business.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\AchievementSherpa.Data.MongoDb.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\AchievementSherpa.Business.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\AchievementSherpa.Data.MongoDb.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\AchievementSherpa.PageParser.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\AchievementSherpa.PageParser.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\AchievementSherpa.WowApi.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\WowDotNetAPI.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\AchievementSherpa.WowApi.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\WowDotNetAPI.pdb

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AchievementsModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.1" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="AchievementsModelStoreContainer">
+    <EntitySet Name="achievement" EntityType="AchievementsModel.Store.achievement" store:Type="Tables" Schema="achievements" />
+    <EntitySet Name="achievementcriteria" EntityType="AchievementsModel.Store.achievementcriteria" store:Type="Tables" Schema="achievements" />
+    <EntitySet Name="achievementseries" EntityType="AchievementsModel.Store.achievementseries" store:Type="Tables" Schema="achievements" />
+    <EntitySet Name="characterachievement" EntityType="AchievementsModel.Store.characterachievement" store:Type="Tables" Schema="achievements" />
+    <EntitySet Name="wowcharacter" EntityType="AchievementsModel.Store.wowcharacter" store:Type="Tables" Schema="achievements" />
+    <AssociationSet Name="FK_achievement" Association="AchievementsModel.Store.FK_achievement">
+      <End Role="achievementseries" EntitySet="achievementseries" />
+      <End Role="achievement" EntitySet="achievement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_achievementcriteria_achievement" Association="AchievementsModel.Store.FK_achievementcriteria_achievement">
+      <End Role="achievement" EntitySet="achievement" />
+      <End Role="achievementcriteria" EntitySet="achievementcriteria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_achievementcriteria_parentachivement" Association="AchievementsModel.Store.FK_achievementcriteria_parentachivement">
+      <End Role="achievement" EntitySet="achievement" />
+      <End Role="achievementcriteria" EntitySet="achievementcriteria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_characterachievement_achievementid" Association="AchievementsModel.Store.FK_characterachievement_achievementid">
+      <End Role="achievement" EntitySet="achievement" />
+      <End Role="characterachievement" EntitySet="characterachievement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_characterachievement_characterid" Association="AchievementsModel.Store.FK_characterachievement_characterid">
+      <End Role="wowcharacter" EntitySet="wowcharacter" />
+      <End Role="characterachievement" EntitySet="characterachievement" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="achievement">
+    <Key>
+      <PropertyRef Name="AchievementID" />
+    </Key>
+    <Property Name="AchievementID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AchievementSeriesID" Type="int" />
+    <Property Name="BlizzardID" Type="varchar" MaxLength="10" />
+    <Property Name="Category" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="4000" />
+    <Property Name="icon" Type="varchar" MaxLength="400" />
+    <Property Name="Name" Type="varchar" MaxLength="255" />
+    <Property Name="ParentCategory" Type="varchar" MaxLength="50" />
+    <Property Name="Points" Type="int" />
+    <Property Name="Rank" Type="int" />
+    <Property Name="SeriesOrder" Type="int" />
+    <Property Name="Side" Type="int" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="achievementcriteria">
+    <Key>
+      <PropertyRef Name="achievementgroupid" />
+    </Key>
+    <Property Name="achievementgroupid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="achievementid" Type="int" />
+    <Property Name="parentachievementid" Type="int" />
+  </EntityType>
+  <EntityType Name="achievementseries">
+    <Key>
+      <PropertyRef Name="achievementseriesid" />
+    </Key>
+    <Property Name="achievementseriesid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="order" Type="int" />
+  </EntityType>
+  <EntityType Name="characterachievement">
+    <Key>
+      <PropertyRef Name="AchievementID" />
+      <PropertyRef Name="CharacterID" />
+    </Key>
+    <Property Name="AchievementID" Type="int" Nullable="false" />
+    <Property Name="CharacterID" Type="int" Nullable="false" />
+    <Property Name="WhenAchieved" Type="datetime" />
+  </EntityType>
+  <EntityType Name="wowcharacter">
+    <Key>
+      <PropertyRef Name="CharacterID" />
+    </Key>
+    <Property Name="CharacterID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Class" Type="varchar" MaxLength="255" />
+    <Property Name="ClusterNumber" Type="varchar" MaxLength="255" />
+    <Property Name="CurrentPoints" Type="int" />
+    <Property Name="Guild" Type="varchar" />
+    <Property Name="LastParseDate" Type="datetime" />
+    <Property Name="Level" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="Race" Type="varchar" MaxLength="255" />
+    <Property Name="Region" Type="varchar" MaxLength="255" />
+    <Property Name="Server" Type="varchar" MaxLength="255" />
+    <Property Name="Side" Type="int" />
+  </EntityType>
+  <Association Name="FK_achievement">
+    <End Role="achievementseries" Type="AchievementsModel.Store.achievementseries" Multiplicity="0..1" />
+    <End Role="achievement" Type="AchievementsModel.Store.achievement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="achievementseries">
+        <PropertyRef Name="achievementseriesid" />
+      </Principal>
+      <Dependent Role="achievement">
+        <PropertyRef Name="AchievementSeriesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_achievementcriteria_achievement">
+    <End Role="achievement" Type="AchievementsModel.Store.achievement" Multiplicity="0..1" />
+    <End Role="achievementcriteria" Type="AchievementsModel.Store.achievementcriteria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="achievement">
+        <PropertyRef Name="AchievementID" />
+      </Principal>
+      <Dependent Role="achievementcriteria">
+        <PropertyRef Name="achievementid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_achievementcriteria_parentachivement">
+    <End Role="achievement" Type="AchievementsModel.Store.achievement" Multiplicity="0..1" />
+    <End Role="achievementcriteria" Type="AchievementsModel.Store.achievementcriteria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="achievement">
+        <PropertyRef Name="AchievementID" />
+      </Principal>
+      <Dependent Role="achievementcriteria">
+        <PropertyRef Name="parentachievementid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_characterachievement_achievementid">
+    <End Role="achievement" Type="AchievementsModel.Store.achievement" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="characterachievement" Type="AchievementsModel.Store.characterachievement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="achievement">
+        <PropertyRef Name="AchievementID" />
+      </Principal>
+      <Dependent Role="characterachievement">
+        <PropertyRef Name="AchievementID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_characterachievement_characterid">
+    <End Role="wowcharacter" Type="AchievementsModel.Store.wowcharacter" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="characterachievement" Type="AchievementsModel.Store.characterachievement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="wowcharacter">
+        <PropertyRef Name="CharacterID" />
+      </Principal>
+      <Dependent Role="characterachievement">
+        <PropertyRef Name="CharacterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E20EBFC-683F-4330-B961-19F71B17BE85}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AchievementSherpa.Business</RootNamespace>
+    <AssemblyName>Simple Achievement Parser</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\..\..\..\Downloads\HtmlAgilityPack.1.4.0\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartThreadPool">
+      <HintPath>..\..\..\..\..\..\..\tools\smartthreadpool\bin\Windows\SmartThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\packages\structuremap.2.6.2\lib\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BinaryHelper.cs" />
+    <Compile Include="BootStrapper.cs" />
+    <Compile Include="CharacterDownloader.cs" />
+    <Compile Include="DownloadHelper.cs" />
+    <Compile Include="Guild.cs" />
+    <Compile Include="HtmlAgilityPackHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressFinder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateAchievementRanking.cs" />
+    <Compile Include="WowHeadAchievementParser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AchievementSherpa.PageParser\AchievementSherpa.PageParser.csproj">
+      <Project>{8E8EC6E7-11AC-4277-A8EB-6A23A74C3E03}</Project>
+      <Name>AchievementSherpa.PageParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AchievementSherpa.WowApi\AchievementSherpa.WowApi.csproj">
+      <Project>{E0FE5AF7-59D8-4670-8827-EC742BC3A55A}</Project>
+      <Name>AchievementSherpa.WowApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business Layer\AchievementSherpa.Business.csproj">
+      <Project>{2F4D75FD-33D0-4CBC-8AFF-59CDB3523B5D}</Project>
+      <Name>AchievementSherpa.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MongoDataLayer\AchievementSherpa.Data.MongoDb.csproj">
+      <Project>{76BCE3F8-8B0A-45CF-894F-BE4D1F05351C}</Project>
+      <Name>AchievementSherpa.Data.MongoDb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

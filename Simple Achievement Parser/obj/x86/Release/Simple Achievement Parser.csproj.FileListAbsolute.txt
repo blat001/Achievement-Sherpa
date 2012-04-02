@@ -1,0 +1,13 @@
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Release\Simple Achievement Parser.exe
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Release\Simple Achievement Parser.pdb
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Release\HtmlAgilityPack.pdb
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Release\HtmlAgilityPack.xml
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\obj\x86\Release\Simple Achievement Parser.exe
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\obj\x86\Release\Simple Achievement Parser.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Release\Simple Achievement Parser.exe.config
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Release\SmartThreadPool.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Release\Business Layer.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Release\MongoDataLayer.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Release\Business Layer.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Release\MongoDataLayer.pdb

@@ -1,0 +1,9 @@
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.WowApi\bin\Debug\AchievementSherpa.WowApi.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.WowApi\bin\Debug\AchievementSherpa.WowApi.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.WowApi\bin\Debug\AchievementSherpa.Business.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.WowApi\bin\Debug\WowDotNetAPI.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.WowApi\bin\Debug\WowDotNetAPI.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.WowApi\bin\Debug\AchievementSherpa.Business.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.WowApi\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.WowApi\obj\Debug\AchievementSherpa.WowApi.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.WowApi\obj\Debug\AchievementSherpa.WowApi.pdb

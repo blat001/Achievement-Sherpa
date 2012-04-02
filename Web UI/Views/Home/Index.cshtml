@@ -1,0 +1,144 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<script type="text/javascript">
+    var uvOptions = {};
+    (function () {
+        var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+        uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/v7VlxR9i0Bk4PUHbrSpL7g.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+    })();
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        Player = Backbone.Model.extend({
+            // A collection doesn't neccesarily have to set
+            // a model but it makes the code more clear and
+            // later on you can add extra functionality with ease
+        });
+        PlayerCollection = Backbone.Collection.extend({
+            model: Player, // Set the collection to use the NewsEntry model
+            initialize: function () {
+                // When initialized we want to associate a view with this collection
+                this.playerListView = new PlayerListView;
+                // Backbone lets us "listen" for certain events
+                // In this case when the collection receives an array
+                // of models we want to re-render the list view
+                this.bind("refresh", this.playerListView.renderList);
+            }
+        });
+
+        PlayerListView = Backbone.View.extend({
+            el: $("#playerlist"), // Every view has a element associated with it
+            initialize: function () {
+                // Set the initial content of the view
+            },
+            renderList: function (collection) {
+                // This function is called when the collection "listens"
+                // for the "refresh" event which is called in our loadResults()
+                console.log(collection)
+                // Now we want to compile our underscore template
+                // The underscore template just takes a string of text/html 
+                var compiled_template = _.template($("#playerlistview").html());
+                // Once compiled we can call our template and pass it any 
+                // matching data we have and append it to our view.el
+                collection.playerListView.el.html(compiled_template({ players: collection.models }));
+            }
+        });
+
+        SearchView = Backbone.View.extend({
+
+            initialize: function () {
+                // Lets create an empty collection to store the news
+                this.player_collection = new PlayerCollection;
+                this.render();
+            },
+            render: function () {
+                templateLoader.loadRemoteTemplate("MainSearchView", '@Url.Content("~/content/templates/MainSearchView.htm")', $.proxy(this.renderLocal, this));
+            },
+
+            renderLocal: function (data) {
+                var compiled = _.template(data);
+                this.el.html(compiled({ name: 'world' }));
+            },
+            events: {
+                // Events are attached when Backbone starts and 
+                // there are many types. We are simply listening for
+                // "keypress" on the input field #searchbox
+                "click input[type=button]": "loadResults"
+            },
+            loadResults: function (event) {
+                alert('clicked on search');
+                // results is passed an event object which we 
+                // can use to get the input text, also note "this"
+                // refers to the current view
+                query = $(event.currentTarget).val();
+
+                // Now we will use jquery deferred objects to get 
+                // data from the google api
+                $.when(this.ajaxGetNews(query))
+                        .then($.proxy(function (response) {
+                            // Below is accessing all the news from google api
+                            // It puts it in a big json string and I am 
+                            // simply selecting it
+                            entries = response.feed.entry;
+                            // Now we pass the array of json objects to add to the collection
+                            this.player_collection.refresh(entries);
+                        }, this)); // $.proxy is a useful way of passing the parent object to the anonymous function
+            },
+            ajaxGetNews: function (query) {
+                // Google is damn fast, return the ajax function to pass the promise() test in the $.when statement
+                return $.ajax("http://www.google.com/base/feeds/snippets/?q=" + query + "&alt=json", { dataType: "json" });
+            }
+
+        });
+
+        AppView = Backbone.View.extend({
+
+            initialize: function () {
+                // Lets create an empty collection to store the news
+                this.mainView = new SearchView({ el: this.el });
+                this.render();
+            },
+            render: function () {
+                this.mainView.render();
+            }
+        });
+
+
+        // Create an app view once the document has loaded
+        var appview = new AppView({ el: $("#appView") });
+
+
+
+    })
+</script>
+<div id="header">
+    <div id="appView">
+       
+    </div>
+    <div id="playerlist">
+    </div>
+</div>
+
+<script type="text/template" id="playerlistview">
+            <!-- Sorry about the the variables below, the google api nest them in some funky places
+            anything after .get() is googles own variable convention and when implemented by
+            your self will most usually be quite simple -->
+            <ul>
+            <% _.each( news, function( news_item ){ %>
+                <li>
+                <h3><%= news_item.get("title").$t %> by <%= news_item.get("author")[0].name.$t %></h3>
+                <p><%= news_item.get("content").$t %>
+                </li>
+            
+            <% }); %>
+            </ul>
+        </script>
+
+@section Header{
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/css/Main.css")" />
+}

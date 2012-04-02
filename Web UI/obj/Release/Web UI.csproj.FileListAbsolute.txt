@@ -1,0 +1,17 @@
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\Web UI.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\Web UI.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\Data Library.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\EFTracingProvider.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\EFProviderWrapperToolkit.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\Data Library.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\EFTracingProvider.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\EFProviderWrapperToolkit.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\obj\Release\ResolveAssemblyReference.cache
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\obj\Release\Web UI.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\obj\Release\Web UI.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\Simple Achievement Parser.exe
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\HtmlAgilityPack.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\SmartThreadPool.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\Simple Achievement Parser.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\HtmlAgilityPack.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web UI\bin\HtmlAgilityPack.xml

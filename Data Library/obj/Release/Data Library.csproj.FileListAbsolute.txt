@@ -1,0 +1,18 @@
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\Data Library.dll
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\Data Library.pdb
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Data Library\obj\Release\ResolveAssemblyReference.cache
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Data Library\obj\Release\Data Library.dll
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Data Library\obj\Release\Data Library.pdb
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\Business Layer.dll
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\Norm.dll
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\Norm.pdb
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\Norm.xml
+C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\Business Layer.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\MySql.Data.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\MySql.Data.Entity.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\MySql.Web.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\Data Library.dll.config
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\EFTracingProvider.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\EFProviderWrapperToolkit.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\EFTracingProvider.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Data Library\bin\Release\EFProviderWrapperToolkit.pdb

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AchievementsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="AchievementsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CharacterAchievements" EntityType="AchievementsModel.CharacterAchievement" />
+    <EntitySet Name="Characters" EntityType="AchievementsModel.Character" />
+    <AssociationSet Name="FK_characterachievement_characterid" Association="AchievementsModel.FK_characterachievement_characterid">
+      <End Role="wowcharacter" EntitySet="Characters" />
+      <End Role="CharacterAchievement" EntitySet="CharacterAchievements" />
+    </AssociationSet>
+    <EntitySet Name="Achievements" EntityType="AchievementsModel.Achievement" />
+    <AssociationSet Name="FK_characterachievement_achievementid" Association="AchievementsModel.FK_characterachievement_achievementid">
+      <End EntitySet="Achievements" Role="achievement" />
+      <End EntitySet="CharacterAchievements" Role="CharacterAchievement" />
+    </AssociationSet>
+    <EntitySet Name="Criteria" EntityType="AchievementsModel.Criteria" />
+    <AssociationSet Name="FK_achievementcriteria_achievement" Association="AchievementsModel.FK_achievementcriteria_achievement">
+      <End EntitySet="Achievements" Role="Achievement" />
+      <End EntitySet="Criteria" Role="achievementcriteria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_achievementcriteria_parentachivement" Association="AchievementsModel.FK_achievementcriteria_parentachivement">
+      <End EntitySet="Achievements" Role="Achievement" />
+      <End EntitySet="Criteria" Role="achievementcriteria" />
+    </AssociationSet>
+    <EntitySet Name="AchievementSeries1" EntityType="AchievementsModel.AchievementSeries" />
+    <AssociationSet Name="FK_achievement" Association="AchievementsModel.FK_achievement">
+      <End EntitySet="AchievementSeries1" Role="achievementsery" />
+      <End EntitySet="Achievements" Role="Achievement" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CharacterAchievement">
+    <Key>
+      <PropertyRef Name="AchievementID" />
+      <PropertyRef Name="CharacterID" />
+    </Key>
+    <Property Type="Int32" Name="AchievementID" Nullable="false" />
+    <Property Type="Int32" Name="CharacterID" Nullable="false" />
+    <Property Type="DateTime" Name="WhenAchieved" />
+    <NavigationProperty Name="wowcharacter" Relationship="AchievementsModel.FK_characterachievement_characterid" FromRole="CharacterAchievement" ToRole="wowcharacter" />
+    <NavigationProperty Name="achievement" Relationship="AchievementsModel.FK_characterachievement_achievementid" FromRole="CharacterAchievement" ToRole="achievement" />
+  </EntityType>
+  <EntityType Name="Character">
+    <Key>
+      <PropertyRef Name="CharacterID" />
+    </Key>
+    <Property Type="Int32" Name="CharacterID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" />
+    <Property Type="String" Name="Region" />
+    <Property Type="String" Name="Server" />
+    <NavigationProperty Name="Achievements" Relationship="AchievementsModel.FK_characterachievement_characterid" FromRole="wowcharacter" ToRole="CharacterAchievement" />
+    <Property Type="String" Name="Guild" />
+    <Property Type="DateTime" Name="LastParseDate" />
+    <Property Type="Int32" Name="Level" />
+    <Property Type="Int32" Name="Side" />
+    <Property Type="Int32" Name="CurrentPoints" />
+    <Property Type="String" Name="Class" />
+    <Property Type="String" Name="Race" />
+    <Property Type="String" Name="ClusterNumber" />
+  </EntityType>
+  <Association Name="FK_characterachievement_characterid">
+    <End Type="AchievementsModel.Character" Role="wowcharacter" Multiplicity="1" />
+    <End Type="AchievementsModel.CharacterAchievement" Role="CharacterAchievement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="wowcharacter">
+        <PropertyRef Name="CharacterID" />
+      </Principal>
+      <Dependent Role="CharacterAchievement">
+        <PropertyRef Name="CharacterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Achievement">
+    <Key>
+      <PropertyRef Name="AchievementID" />
+    </Key>
+    <Property Name="AchievementID" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="BlizzardID" Type="String" />
+    <Property Name="Category" Type="String" />
+    <Property Name="Description" Type="String" />
+    <Property Name="Name" Type="String" />
+    <Property Name="ParentCategory" Type="String" />
+    <Property Name="Points" Type="Int32" />
+    <Property Name="Side" Type="Int32" />
+    <Property Name="Type" Type="String" />
+    <NavigationProperty Name="characterachievements" Relationship="AchievementsModel.FK_characterachievement_achievementid" FromRole="achievement" ToRole="CharacterAchievement" />
+    <NavigationProperty xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" Name="criteriaachiements" a:GetterAccess="Internal" Relationship="AchievementsModel.FK_achievementcriteria_achievement" FromRole="Achievement" ToRole="achievementcriteria" />
+    <NavigationProperty Name="Criteria" Relationship="AchievementsModel.FK_achievementcriteria_parentachivement" FromRole="Achievement" ToRole="achievementcriteria" />
+    <Property Name="AchievementSeriesID" Type="Int32" />
+    <NavigationProperty Name="Series" Relationship="AchievementsModel.FK_achievement" FromRole="Achievement" ToRole="achievementsery" />
+    <Property Name="SeriesOrder" Type="Int32" />
+    <Property Name="icon" Type="String" />
+    <Property Type="Int32" Name="Rank" />
+  </EntityType>
+  <Association Name="FK_characterachievement_achievementid">
+    <End Type="AchievementsModel.Achievement" Multiplicity="1" Role="achievement" />
+    <End Type="AchievementsModel.CharacterAchievement" Multiplicity="*" Role="CharacterAchievement" />
+    <ReferentialConstraint>
+      <Principal Role="achievement">
+        <PropertyRef Name="AchievementID" />
+      </Principal>
+      <Dependent Role="CharacterAchievement">
+        <PropertyRef Name="AchievementID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Criteria">
+    <Key>
+      <PropertyRef Name="achievementgroupid" />
+    </Key>
+    <Property Type="Int32" Name="achievementgroupid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="achievementid" />
+    <Property Type="Int32" Name="parentachievementid" />
+    <NavigationProperty Name="achievement" Relationship="AchievementsModel.FK_achievementcriteria_achievement" FromRole="achievementcriteria" ToRole="Achievement" />
+    <NavigationProperty Name="achievement1" Relationship="AchievementsModel.FK_achievementcriteria_parentachivement" FromRole="achievementcriteria" ToRole="Achievement" />
+  </EntityType>
+  <Association Name="FK_achievementcriteria_achievement">
+    <End Type="AchievementsModel.Achievement" Multiplicity="0..1" Role="Achievement" />
+    <End Type="AchievementsModel.Criteria" Multiplicity="*" Role="achievementcriteria" />
+    <ReferentialConstraint>
+      <Principal Role="Achievement">
+        <PropertyRef Name="AchievementID" />
+      </Principal>
+      <Dependent Role="achievementcriteria">
+        <PropertyRef Name="achievementid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_achievementcriteria_parentachivement">
+    <End Type="AchievementsModel.Achievement" Multiplicity="0..1" Role="Achievement" />
+    <End Type="AchievementsModel.Criteria" Multiplicity="*" Role="achievementcriteria" />
+    <ReferentialConstraint>
+      <Principal Role="Achievement">
+        <PropertyRef Name="AchievementID" />
+      </Principal>
+      <Dependent Role="achievementcriteria">
+        <PropertyRef Name="parentachievementid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="AchievementSeries">
+    <Key>
+      <PropertyRef Name="achievementseriesid" />
+    </Key>
+    <Property Type="Int32" Name="achievementseriesid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="order" />
+    <NavigationProperty Name="achievements" Relationship="AchievementsModel.FK_achievement" FromRole="achievementsery" ToRole="Achievement" />
+  </EntityType>
+  <Association Name="FK_achievement">
+    <End Type="AchievementsModel.AchievementSeries" Multiplicity="0..1" Role="achievementsery" />
+    <End Type="AchievementsModel.Achievement" Multiplicity="*" Role="Achievement" />
+    <ReferentialConstraint>
+      <Principal Role="achievementsery">
+        <PropertyRef Name="achievementseriesid" />
+      </Principal>
+      <Dependent Role="Achievement">
+        <PropertyRef Name="AchievementSeriesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

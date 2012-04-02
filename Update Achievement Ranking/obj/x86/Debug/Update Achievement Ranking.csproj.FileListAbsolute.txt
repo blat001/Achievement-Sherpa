@@ -1,0 +1,10 @@
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Update Achievement Ranking\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Update Achievement Ranking\bin\Debug\Update Achievement Ranking.exe
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Update Achievement Ranking\bin\Debug\Update Achievement Ranking.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Update Achievement Ranking\bin\Debug\AchievementSherpa.Business.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Update Achievement Ranking\bin\Debug\AchievementSherpa.Data.MongoDb.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Update Achievement Ranking\bin\Debug\AchievementSherpa.Business.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Update Achievement Ranking\bin\Debug\AchievementSherpa.Data.MongoDb.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Update Achievement Ranking\obj\x86\Debug\Update Achievement Ranking.exe
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Update Achievement Ranking\obj\x86\Debug\Update Achievement Ranking.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Update Achievement Ranking\bin\Debug\Update Achievement Ranking.exe.config

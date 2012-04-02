@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AchievementsModelStoreContainer" CdmEntityContainer="AchievementsEntities">
+    <EntitySetMapping Name="CharacterAchievements">
+      <EntityTypeMapping TypeName="AchievementsModel.CharacterAchievement">
+        <MappingFragment StoreEntitySet="characterachievement">
+          <ScalarProperty Name="WhenAchieved" ColumnName="WhenAchieved" />
+          <ScalarProperty Name="CharacterID" ColumnName="CharacterID" />
+          <ScalarProperty Name="AchievementID" ColumnName="AchievementID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Characters">
+      <EntityTypeMapping TypeName="AchievementsModel.Character">
+        <MappingFragment StoreEntitySet="wowcharacter">
+          <ScalarProperty Name="ClusterNumber" ColumnName="ClusterNumber" />
+          <ScalarProperty Name="Race" ColumnName="Race" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="CurrentPoints" ColumnName="CurrentPoints" />
+          <ScalarProperty Name="Side" ColumnName="Side" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="LastParseDate" ColumnName="LastParseDate" />
+          <ScalarProperty Name="Guild" ColumnName="Guild" />
+          <ScalarProperty Name="Server" ColumnName="Server" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CharacterID" ColumnName="CharacterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Achievements">
+      <EntityTypeMapping TypeName="AchievementsModel.Achievement">
+        <MappingFragment StoreEntitySet="achievement">
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="SeriesOrder" ColumnName="SeriesOrder" />
+          <ScalarProperty Name="AchievementSeriesID" ColumnName="AchievementSeriesID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Side" ColumnName="Side" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="ParentCategory" ColumnName="ParentCategory" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="BlizzardID" ColumnName="BlizzardID" />
+          <ScalarProperty Name="AchievementID" ColumnName="AchievementID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Criteria">
+      <EntityTypeMapping TypeName="AchievementsModel.Criteria">
+        <MappingFragment StoreEntitySet="achievementcriteria">
+          <ScalarProperty Name="parentachievementid" ColumnName="parentachievementid" />
+          <ScalarProperty Name="achievementid" ColumnName="achievementid" />
+          <ScalarProperty Name="achievementgroupid" ColumnName="achievementgroupid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AchievementSeries1">
+      <EntityTypeMapping TypeName="AchievementsModel.AchievementSeries">
+        <MappingFragment StoreEntitySet="achievementseries">
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="achievementseriesid" ColumnName="achievementseriesid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

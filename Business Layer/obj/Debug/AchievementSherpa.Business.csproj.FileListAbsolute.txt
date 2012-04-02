@@ -1,0 +1,5 @@
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Business Layer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Business Layer\bin\Debug\AchievementSherpa.Business.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Business Layer\bin\Debug\AchievementSherpa.Business.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Business Layer\obj\Debug\AchievementSherpa.Business.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Business Layer\obj\Debug\AchievementSherpa.Business.pdb

@@ -1,0 +1,12 @@
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\bin\Release\RankAchievements.exe.config
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\bin\Release\RankAchievements.exe
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\bin\Release\RankAchievements.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\bin\Release\Data Library.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\bin\Release\EFTracingProvider.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\bin\Release\EFProviderWrapperToolkit.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\bin\Release\Data Library.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\bin\Release\EFTracingProvider.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\bin\Release\EFProviderWrapperToolkit.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\obj\x86\Release\RankAchievements.exe
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\RankAchievements\obj\x86\Release\RankAchievements.pdb
