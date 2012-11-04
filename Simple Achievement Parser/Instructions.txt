@@ -1,0 +1,12 @@
+﻿This project is a console job that performs the following
+
+1. Parses the latest achievements from wowhead.com (I wonder if this can be changed to use the WOW API instead)
+
+2. Download a list of guilds from http://wow.guildprogress.com/server-list/US and then parses the members
+
+
+
+SETTING UP THE DATABASE
+==========================================================================================
+
+This program depends on Mongo 

@@ -1,0 +1,1750 @@
+/* vBulletin 3 CSS For Style 'WoWI Dark Sleek' (styleid: 11) */
+
+html
+{
+    
+    background : url(Images/myrs-html-bg.jpg) left top;
+}
+body
+
+{
+
+    
+    color: #E5E5E5;
+
+    font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+    padding: 0px;
+
+    margin: 0 25px 0 25px;
+
+    
+
+}
+
+a:link, body_alink
+
+{
+
+    color: #E5E5E5;
+
+}
+
+a:visited, body_avisited
+
+{
+
+    color: #E5E5E5;
+
+}
+
+a:hover, a:active, body_ahover
+
+{
+
+    color: #BEBF9B;
+
+}
+
+.page
+
+{
+
+    background: #181818;
+
+    color: #E5E5E5;
+
+    width: 100%;
+
+}
+
+.page a:link, .page_alink
+
+{
+
+    color: #E5E5E5;
+
+}
+
+.page a:visited, .page_avisited
+
+{
+
+    color: #E5E5E5;
+
+}
+
+.page a:hover, .page a:active, .page_ahover
+
+{
+
+    color: #BEBF9B;
+
+}
+
+td, th, p, li
+
+{
+
+    font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+}
+
+.tborder
+
+{
+
+    background: #404040;
+
+}
+
+.tcat
+
+{
+
+    background: #404040;
+
+    color: #E5E5E5;
+
+    font: bold 14px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+}
+
+.tcat a:link, .tcat_alink
+
+{
+
+    color: #E5E5E5;
+
+    text-decoration: none;
+
+}
+
+.tcat a:visited, .tcat_avisited
+
+{
+
+    color: #E5E5E5;
+
+    text-decoration: none;
+
+}
+
+.tcat a:hover, .tcat a:active, .tcat_ahover
+
+{
+
+    color: #BEBF9B;
+
+    text-decoration: underline;
+
+}
+
+.thead
+
+{
+
+    background: #585858;
+
+    color: #E5E5E5;
+
+    font: bold 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+}
+
+.thead a:link, .thead_alink
+
+{
+
+    color: #E5E5E5;
+
+}
+
+.thead a:visited, .thead_avisited
+
+{
+
+    color: #E5E5E5;
+
+}
+
+.thead a:hover, .thead a:active, .thead_ahover
+
+{
+
+    color: #BEBF9B;
+
+}
+
+.tfoot
+
+{
+
+    background: #404040;
+
+    color: #E5E5E5;
+
+    padding: 4px;
+
+}
+
+.tfoot a:link, .tfoot_alink
+
+{
+
+    color: #E5E5E5;
+
+}
+
+.tfoot a:visited, .tfoot_avisited
+
+{
+
+    color: #E5E5E5;
+
+}
+
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover
+
+{
+
+    color: #BEBF9B;
+
+}
+
+.alt1, .alt1Active
+
+{
+
+    background: #242424;
+
+    color: #E5E5E5;
+
+}
+
+.alt2, .alt2Active
+
+{
+
+    background: #202020;
+
+    color: #E5E5E5;
+
+}
+
+td.inlinemod
+
+{
+
+    background: #2f2f2f;
+
+    color: #E5E5E5;
+
+}
+
+.wysiwyg
+
+{
+
+    background: #313131;
+
+    color: #E5E5E5;
+
+    font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+}
+
+textarea, .bginput
+
+{
+
+    background: #313131;
+
+    color: #E5E5E5;
+
+    font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+    border: 1px solid #404040;
+
+}
+
+.button
+
+{
+
+    background: #313131;
+
+    color: #E5E5E5;
+
+    font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+    border: 1px solid #404040;
+
+}
+
+select
+{
+
+    background: #4f4f4e;
+
+    color: #E5E5E5;
+
+    font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+    border: 1px solid #404040;
+
+}
+
+input
+{
+
+    background: #4f4f4e;
+
+    color: #E5E5E5;
+
+    font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+    border: 1px solid #404040;
+
+}
+
+option, optgroup
+
+{
+
+    font-size: 11px;
+
+    font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+}
+
+.smallfont
+
+{
+
+    font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+}
+
+.time
+
+{
+
+    color: #E5E5E5;
+
+}
+
+.navbar
+
+{
+
+    font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+}
+
+.navbar a:link, .navbar_alink
+
+{
+
+    color: #c0c0c0;
+
+}
+
+.navbar a:visited, .navbar_avisited
+
+{
+
+    color: #c0c0c0;
+
+}
+
+.navbar a:hover, .navbar a:active, .navbar_ahover
+
+{
+
+    color: #BEBF9B;
+
+}
+
+.highlight
+
+{
+
+    color: #FFCC33;
+
+    font-weight: bold;
+
+}
+
+.fjsel
+
+{
+
+    background: #5b5b59;
+
+    color: #D9D9D9;
+
+}
+
+.fjdpth0
+
+{
+
+    background: #4f4f4e;
+
+    color: #D9D9D9;
+
+}
+
+.panel
+
+{
+
+    background: #242424;
+
+    color: #E5E5E5;
+
+    padding: 10px;
+
+}
+
+.panelsurround
+
+{
+
+    background: #202020;
+
+    color: #E5E5E5;
+
+    border: 1px solid #404040;
+
+}
+
+legend
+
+{
+
+    color: #E5E5E5;
+
+    font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+}
+
+.vbmenu_control
+
+{
+
+    background: #404040;
+
+    color: #E5E5E5;
+
+    font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+    padding: 3px 6px 3px 6px;
+
+    white-space: nowrap;
+
+}
+
+.vbmenu_control a:link, .vbmenu_control_alink
+
+{
+
+    color: #E5E5E5;
+
+    text-decoration: none;
+
+}
+
+.vbmenu_control a:visited, .vbmenu_control_avisited
+
+{
+
+    color: #E5E5E5;
+
+    text-decoration: none;
+
+}
+
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
+
+{
+
+    color: #BEBF9B;
+
+    text-decoration: underline;
+
+}
+
+.vbmenu_popup
+
+{
+
+    background: #303030;
+
+    color: #E5E5E5;
+
+    z-index: 100;
+
+    border: 1px solid #545454;
+
+    padding: 1px;
+
+}
+
+.vbmenu_option
+
+{
+
+    background: #202020;
+
+    color: #E5E5E5;
+
+    font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+}
+
+.vbmenu_option a:link, .vbmenu_option_alink
+
+{
+
+    text-decoration: none;
+
+}
+
+.vbmenu_option a:visited, .vbmenu_option_avisited
+
+{
+
+    color: #E5E5E5;
+
+    text-decoration: none;
+
+}
+
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
+
+{
+
+    color: #BEBF9B;
+
+    text-decoration: none;
+
+}
+
+.vbmenu_hilite
+
+{
+
+    background: #424242;
+
+    color: #ffffff;
+
+    font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+}
+
+.vbmenu_hilite a:link, .vbmenu_hilite_alink
+
+{
+
+    color: #E5E5E5;
+
+    text-decoration: none;
+
+}
+
+.vbmenu_hilite a:visited, .vbmenu_hilite_avisited
+
+{
+
+    color: #E5E5E5;
+
+    text-decoration: none;
+
+}
+
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover
+
+{
+
+    color: #BEBF9B;
+
+    text-decoration: none;
+
+}
+
+/* ***** styling for 'big' usernames on postbit etc. ***** */
+
+.bigusername { font-size: 14pt;}
+
+.username-premium {color: #FFCC00; background: #202020; text-decoration: underline;}
+
+
+
+/* ***** small padding on 'thead' elements ***** */
+
+td.thead, div.thead { padding: 4px; }
+
+
+
+/* ***** basic styles for multi-page nav elements */
+
+.pagenav a { text-decoration: none; }
+
+.pagenav td { padding: 2px 4px 2px 4px; }
+
+
+
+/* ***** define margin and font-size for elements inside panels ***** */
+
+.fieldset { margin-bottom: 6px;}
+
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
+
+fieldset { border: 1px solid #736549; }
+
+
+
+/* ***** don't change the following ***** */
+
+form { display: inline; }
+
+label { cursor: default; }
+
+.normal { font-weight: normal; }
+
+.inlineimg { vertical-align: middle; }
+
+/*-- Shadows --*/
+
+.shadow {-moz-box-shadow: 0 0 1em black;
+
+-webkit-box-shadow: 0 0 1em black;
+
+box-shadow: 0 0 1em black}
+
+
+
+/*-- Site Wrappers --*/
+
+#layout{max-width:1200px;min-width:998px;margin-left:auto;margin-right:auto;}
+
+#wrapper-noads{margin:0 0 0 0!important}
+
+#wrapper{margin-right:170px}
+
+.page-border-right {background: #181818;border-right: 1px solid #404040;width: 1px}
+
+.page-border-left {background: #181818;border-left: 1px solid #404040;width: 1px}
+
+#outerpage { display: table;
+position: static;
+width: 100%;
+height: 100%;}
+
+#innerpage { padding:10px; display: table-cell; vertical-align: middle;color:#E5E5E5;border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;-webkit-border-top-left-radius:3px;-webkit-border-top-right-radius:3px;padding:10px 10px 30px 10px;margin:0 -8px 0 -8px}
+
+
+
+/*-- Header --*/
+
+#sitelogo {position: absolute;left: 0px;top: 0px;width:362px}
+
+#logopromo {position: absolute;left: 0px;top: 59px;width:0px;height:0px}
+
+#header {position:relative;height: 124px;}
+
+#header-bg {height: 124px;}
+
+#header-ad {position: absolute;right:0px;padding-top:15px;width:728px}
+
+.header-search {width: 200px;padding-top: 10px;padding-right: 6px}
+
+
+
+/*-- Right skyscraper ad --*/
+
+#sidebar {position:relative}
+
+#sidebar-contents {width:160px;position:absolute;right:0;top:105px}
+
+#sidebar-ad {width:160px;padding-top:4px}
+
+
+
+/*-- Box Ad --*/
+
+#cubeAd{width:300px; height:250px;margin-bottom:10px}
+
+
+
+/*-- titles --*/
+
+.itemtitle{font-family:Georgia,'Times New Roman',Times,serif;font-size:22px;color:#da8a00}
+
+.itemtitle .rss{float:right; padding:4px 10px 0 0}
+
+.itemtitle a:link, .itemtitle a:visited {color:#da8a00;text-decoration:none !important}
+
+.itemtitle a:hover {color:#fff}
+
+
+
+/*-- New Nav --*/
+
+#menu_horiz {text-transform:uppercase;background:#535353 url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/bg-dark-menu.png) repeat-x;border-color:#292929;border-style:solid;border-width:0 0 1px;font:14px Verdana,Arial,Helvetica,sans-serif;height:35px;list-style-type:none;margin:0;padding:0;position:relative;z-index:3}
+
+#menu_horiz * {_font-size:1em}/*IE6 fix*/
+
+#menu_horiz li {background:#535353 url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/bg-dark-menu.png);float:left;margin:0;position:relative}
+
+#menu_horiz li:hover {background-color:#1b1b1b;background-position:bottom}
+
+#menu_horiz div.sub {text-transform:none;border-color:#292929}
+
+#menu_horiz a {color:#fff;display:block;line-height:20px;margin:0;padding:2px 10px}
+
+#menu_horiz a, #menu_horiz li.has-sub a {background:url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/bg-dark-separator.gif) right no-repeat;padding-right:18px}
+
+#menu_horiz a.no-href, #menu_horiz a.no-href:hover, #menu_horiz a.no-href:hover span {cursor:default;text-decoration:none !important}
+
+#menu_horiz img {vertical-align:text-top}
+
+#menu_horiz ul {display:none;left:0;list-style-type:none;min-width:100%;padding:0;margin:0;position:absolute;top:24px;width:135px;z-index:1}
+
+#menu_horiz li li {float:none;position:relative}
+
+#menu_horiz li li, #menu_horiz li li.nobgchange:hover {background:#535353 url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/bg-dark-submenu.png) repeat-x}
+
+#menu_horiz li li:hover {background-color:#2d2d2d;background-position:top right}
+
+#menu_horiz li li a {border-color:#292929;line-height:16px;overflow:hidden;padding:2px 4px}
+
+#menu_horiz li.has-sub ul {-moz-box-shadow: 0px 0px 8px #000;-webkit-box-shadow: 0px 0px 8px #000;box-shadow: 0px 0px 8px #000}
+
+#menu_horiz li.has-sub li.has-sub {zoom:100%}
+
+#menu_horiz li.has-sub:hover li a {background:none;padding:2px 4px}
+
+#menu_horiz li.has-sub:hover li ul {left:135px;top:0}
+
+#menu_horiz li.has-sub:hover li.first-child > ul {top:0}
+
+#menu_horiz li.has-sub:hover ul {display:block}
+
+#menu_horiz li.has-sub:hover ul ul {display:none}
+
+#menu_horiz li li.has-sub:hover ul {display:block}
+
+#menu_horiz li li.has-sub:hover ul ul {display:none}
+
+#menu_horiz li li li.has-sub:hover ul {display:block}
+
+#menu_horiz li li li.has-sub:hover ul ul {display:none}
+
+#menu_horiz li li li li.has-sub:hover ul {display:block}
+
+#menu_horiz li li li li.has-sub:hover ul ul {display:none}
+
+#nav {height:36px;z-index:3}
+
+#nav a, #nav a span {text-decoration:none}
+
+
+
+#menu_horiz a {line-height:35px;padding:0 17px}
+
+#menu_horiz li li {*width:100%}
+
+#menu_horiz li li.has-sub:hover {*margin-bottom:-3px}
+
+#menu_horiz div.sub {*background:url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/clear.gif);border-style:solid;border-width:1px;display:none;font-size:12px;position:absolute;top:35px;width:225px;z-index:1}
+
+#menu_horiz li:hover > div.sub {display:block}
+
+#menu_horiz em {bottom:-10px;left:-10px;position:absolute;right:-10px;top:-1px}
+
+#menu_horiz ul em {left:-1px;top:-10px}
+
+#menu_horiz ul var {bottom:-10px;left:-10px;position:absolute;top:27px;width:9px}
+
+#menu_horiz ul {position:static}
+
+#menu_horiz ul a {padding:0 10px !important}
+
+#menu_horiz li.has-sub:hover li div.sub, #menu_horiz li.has-sub.hov li div.sub {left:200px;*left:225px;top:-1px}
+
+#menu_horiz li.nc-account-code > div.sub {left:auto !important;right:-1px !important}
+
+#menu_horiz li.nc-account-code2 > div.sub {left:auto !important;right:-1px !important}
+
+#menu_horiz li.nc-author > div.sub {left:auto !important;right:-1px !important}
+
+#menu_horiz li li a {border-bottom-style:solid;border-bottom-width:1px;line-height:26px}
+
+#menu_horiz li li.last-child > a {border-bottom-width:0}
+
+#menu_horiz li.has-sub li.hov {_margin-bottom:-3px !important}
+
+#menu_horiz li.nc-help a {background:url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/bg-dark-doubleseparator.gif) right no-repeat;padding-right:19px}
+
+#menu_horiz li.nc-account-code a {background:url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/bg-dark-doubleseparator.gif) right no-repeat;padding-right:19px}
+
+#menu_horiz li.nc-account-code2 a {padding-right:19px}
+
+#menu_horiz li li.has-sub > a {background:url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/arrow-right-spaced-white.png) right no-repeat !important}
+
+#menu_horiz .quicksearch {color:#fff;padding:4px;}
+
+#menu_horiz .nc-account-code, #menu_horiz .nc-account-code2 {float:right}
+
+#menu_horiz .nc-author {float:right}
+
+#menu_horiz .nc-admin {float:right}
+
+
+
+#menu_horiz .showicon {float:left;width:25px;height:35px;background:url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/menu-icons.png) no-repeat}
+
+#menu_horiz li.nc-addons a {padding-left:34px}
+
+#menu_horiz li.nc-addons .showicon {margin-left:8px;background-position: 0 0}
+
+#menu_horiz li.nc-community a {padding-left:38px}
+
+#menu_horiz li.nc-community .showicon {margin-left:12px;background-position: 0 -35px}
+
+#menu_horiz li.nc-forums a {padding-left:34px}
+
+#menu_horiz li.nc-forums .showicon {margin-left:8px;background-position: 0 -69px}
+
+#menu_horiz li.nc-help a {padding-left:34px}
+
+#menu_horiz li.nc-help .showicon {margin-left:8px;background-position: 0 -103px}
+
+#menu_horiz li.nc-strike a {padding-left:34px}
+
+#menu_horiz li.nc-strike .showicon {margin-left:8px;background-position: 0 -137px}
+
+#menu_horiz li.nc-author a {padding-left:34px}
+
+#menu_horiz li.nc-author .showicon {margin-left:8px;background-position: 0 -171px}
+
+#menu_horiz li.nc-admin a {padding-left:34px}
+
+#menu_horiz li.nc-admin .showicon {margin-left:8px;background-position: 0 -205px}
+
+
+
+#menu_horiz .quicksearch .searchoptions {font-size:10px}
+
+#menu_horiz .quicksearch .searchoptions input {width:7px;height:7px;;margin:2px}
+
+#menu_horiz .advancedsearch {font-size:10px;margin-top:-6px}
+
+
+
+#user-login {font-size:11px;line-height:35px;float:right;padding-right:10px}
+
+#user-login a {display:block;float:left;height:35px;padding:0 6px;text-transform: capitalize;background:none}
+
+#user-login a:hover {color:#da8a00}
+
+
+
+#menu_horiz .searchinput{width:155px;height:23px;background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/searchbar.png) repeat-x top left;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;margin:6px 6px 0 6px}
+
+#menu_horiz .searchinput .spyglass input{margin:0;width:18px; height:17px !important}
+
+#menu_horiz .searchinput input{width:118px;background:transparent;color: #414141;font-size: 14px;border: 0px;outline:0;padding: 3px 4px 4px 4px;height: 18px}
+
+#menu_horiz .searchinput .spyglass{float:right; padding: 1px 2px 0 0}
+
+#menu_horiz .nc-search {float:right}
+
+
+
+/*-- Portal --*/
+
+#portal_center {background:#2b2b2b;}
+
+#portal_right {background:#262626;}
+
+
+
+#recentthreads {margin:-10px -10px 0 -10px;padding:10px;background:#202020 url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/recent-bg.png) repeat-x bottom left;border-bottom:1px solid #1e1e1e}
+
+#recentthreadsdiv {height:0px;margin:0 -10px 0 -10px;border-bottom:1px solid #333}
+
+#threadlist {list-style-type:none;margin:0;padding:0}
+
+#threadlist .title {padding:8px 0 0 8px}
+
+#threadlist .title a {text-decoration:none}
+
+#threadlist .title a:hover {color:#da8a00}
+
+#threadlist .info {padding:0 0 8px 0;font-size: 10px;color:#999}
+
+#threadlist .info a {color:#aaa;text-decoration:none}
+
+#threadlist .info a:hover {color:#0CF}
+
+#threadlist .count {float:right;padding:7px 5px 5px 0;font-size: 10px;color:#999}
+
+#recentthreads .alt1 {background-color:#2b2b2b}
+
+#recentthreads .alt2 {background:none}
+
+
+
+/*-- Login Page --*/
+
+#loginpanel {width:600px;margin:60px auto 150px  auto; text-align:center}
+
+#loginpanel .panelsurround {-moz-box-shadow: 0px 0px 18px #000;-webkit-box-shadow: 0px 0px 18px #000;box-shadow: 0px 0px 18px #000}
+
+#loginpanel .itemtitle {margin-bottom:20px}
+
+#loginpanel #createaccount {text-align:center;font-size:20px;color:#ffff00;margin-top:20px}
+
+#loginpanel #learnpremium {text-align:center;font-size:14px;color:#e0e0e0;margin-top:5px}
+
+#loginpanel input {font-size:20px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}
+
+#loginpanel #forgotlogin {text-align:right;font-size:10px;padding-top:20px;}
+
+
+
+/*-- Navbar --*/
+
+.navbarbg {background: #181818}
+
+.navbar-corner-left {float: left;width: 5px;height: 5px}
+
+.navbar-corner-right {float: right;width: 5px;height: 5px}
+
+
+
+/*-- Postbit - Forum & Comments --*/
+
+.postbit-carrot {margin-right: -8px;margin-top: -8px;background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/misc/postbit-carrot.png) top right no-repeat}
+
+.alt1-author {background: #242424;color: #E5E5E5}
+
+.alt2-postbit {background: #202020 url(http://s.wowinterface.com/images/style_mmoi_wowi2/misc/postbit-vert-shadow.png) repeat-y top right;color: #E5E5E5}
+
+.alt2-author {background: #2b1d1a url(http://s.wowinterface.com/images/style_mmoi_wowi2/misc/postbit-vert-shadow.png) repeat-y top right;color: #E5E5E5}
+
+
+
+/*-- News --*/
+
+.news_title {min-height: 76px}
+
+.news_title_big {padding-top: 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:22px;color:#da8a00}
+
+.news_title_big a:link, .news_title_big a:visited {color: #da8a00;text-decoration: none}
+
+.news_title_big a:hover, .news_title_big a:active {color: #fff;text-decoration: none}
+
+.news_title_small {font: 12px verdana, geneva, lucida, arial, helvetica, sans-serif;color: #cdcdcd}
+
+.news_title_small a:link, .news_title_small a:visited {color: #cdcdcd}
+
+.news_title_small a:hover, .news_title_small a:active {color: #FF9900}
+
+.news_carrot {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/news-carrot.png) no-repeat bottom left;min-height: 76px}
+
+.news_misc {float: right;padding: 15px 2px 15px 15px;text-align: right;color: #cdcdcd;font-size: 9px}
+
+.news_misc a:link, .news_misc a:visited {color: #cdcdcd}
+
+.news_misc a:hover, .news_misc a:active {color: #FF9900}
+
+.news_avatar {float: left;padding: 10px 10px 10px 2px}
+
+#news .boxtablist {padding:8px 0 8px 0 !important}
+
+#news .boxtab-section {padding:0 0 0 0 !important}
+
+#news #lhorz-effect {margin-right:0 !important}
+
+#news .alt1 {background: #353535}
+
+
+
+/*-- Tabbed Boxes Bar --*/
+
+#lvert-effect-sm {float:left;margin-top:6px;height:10px;border-bottom:1px solid #404040;border-left:1px solid #404040;text-align: right}
+
+#lhorz-effect-sm {padding:4px;height:9px;margin-bottom:13px;border-bottom:1px solid #404040;text-align:right}
+
+#lvert-effect {float:left;margin-top:12px;height:18px;border-bottom:1px solid #404040;border-left:1px solid #404040;text-align: right}
+
+#lhorz-effect {margin-right:10px;padding:4px;height:23px;border-bottom:1px solid #404040;text-align:right}
+
+#managementlinks{color:#404040;padding-top:10px;font-size:10px;white-space:nowrap}
+
+#managementlinks a {text-decoration:none;color:#2ea5f1}
+
+#managementlinks a:hover {color:#fff}
+
+
+
+/*-- Tabbed Boxes --*/
+
+.boxtablist li a, .boxtablist li a:hover {border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px}
+
+.boxtablist {float: left; background:#2a2a2a;font:14px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;list-style:none;padding:8px 0 8px 8px;}
+
+.boxtablist li {border:0;float:left;margin:0 5px 0 0}
+
+.boxtablist a, .boxtablist .static {background-color:#181818;color:#B4B4B4;float:none;display:block;padding:6px 8px 6px 8px;text-decoration:none;outline:none;position:relative}
+
+.boxtablist li a:hover {background-color:#a8811a;color:white;text-decoration:none}
+
+.boxtablist .current {height:37px;background:url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/tabarrow.png) no-repeat bottom center;padding:0;position:relative}
+
+.boxtablist .current a {background:#5d5d5d;color:white;cursor:default !important}
+
+.boxtablist .current a:hover {background-color:#5d5d5d; !important}
+
+.boxtablist li:active a {color:white;cursor:default;padding-bottom:6px;}
+
+.boxtab-section, .boxtab-section-hide {display: block; padding:0 8px 8px 8px;}
+
+.boxtab-section-hide {display:none}
+
+#editform .boxtablist {background:#242424}
+
+
+
+/*-- Title Line --*/
+
+.divline{background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/divline.png) repeat-x bottom left; padding:0 0 8px 0}
+
+.divline .title {font-family:Georgia,'Times New Roman',Times,serif;font-size:28px; color:#da8a00}
+
+
+
+/*-- File info --*/
+
+#fileinfo {width:100%;display:table}
+
+#fileinfo .title {font-size:28px; color:#da8a00}
+
+#fileinfo #patch {float:right; margin-top:5px}
+
+#fileinfo #author {font-size:12px; color:#2ea5f1; padding:2px 3px 0 2px; margin:0 315px 10px 0}
+
+#fileinfo #author a {color:#2ea5f1}
+
+#fileinfo #author a:hover {color:#fff}
+
+#fileinfo #version {float:right; color:#2ea5f1; font-size:12px;}
+
+#fileinfo .divline {margin-right:315px; padding:0 3px 8px 2px}
+
+#fileinfo .infobox {clear:right;float:right;position:relative;margin:4px 0 10px 10px;border-collapse:collapse;color:#ffffff;width:300px}
+
+#fileinfo .titletext {color:#B1B1B1}
+
+#fileinfo .alt1 {font-size:11px;background: #303030;}
+
+#fileinfo .alt2 {font-size:11px;background: #404040;}
+
+.fileinfo-pics {text-align:center;padding:8px 8px 0 8px}
+
+.fileinfo-pics a {text-decoration: none}
+
+
+
+#fileinfo #addfav, #fileinfo #alreadyfav {float:left;text-align:center;width:142px;margin-right:6px;padding:0px !important}
+
+#fileinfo #help {float:left;text-align:center;width:142px;padding:0px !important}
+
+#fileinfo #portal {float:left;text-align:center;width:94px;margin-right:4px;margin-top:4px;padding:0px !important}
+
+#fileinfo #bugs {float:left;text-align:center;width:94px;margin-right:4px;margin-top:4px;padding:0px !important}
+
+#fileinfo #features {float:left;text-align:center;width:94px;margin-top:4px;padding:0px !important}
+
+#fileinfo #addfav a, #fileinfo #alreadyfav a, #fileinfo #help a, #fileinfo #portal a, #fileinfo #bugs a, #fileinfo #features a {display:block;text-decoration: none;padding:6px 8px 6px 8px}
+
+#fileinfo #addfav:hover, #fileinfo #help:hover, #fileinfo #portal:hover, #fileinfo #bugs:hover, #fileinfo #features:hover {background-color:#da8a00}
+
+#fileinfo #alreadyfav:hover {background:#2f2f2f}
+
+#fileinfo #alreadyfav a {color:#888}
+
+#fileinfo #buttonbox a:hover {color:#fff}
+
+
+
+/*-- Download Button --*/
+
+#downloadbutton {width:300px;}
+
+#downloadbutton #download{font-size:32px;color:#da8a00}
+
+#downloadbutton #download a {color:#da8a00;text-decoration:none}
+
+#downloadbutton #download a:hover {color:#fff}
+
+#downloadbutton #download #size{float: right;margin-top:16px;font-size:16px;color:#666}
+
+#downloadbutton #safe{font-size:10px;}
+
+#downloadbutton #icon{float: left; padding-right: 5px;}
+
+
+
+/*-- Stats Blocks Tabs --*/
+
+.TheTabs {float: left;background-color: #2f2f2f; height: 30px}
+
+.TabHead {border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; z-index: 10;float: left;margin-right: 4px;background: #252525;padding:5px;cursor: pointer;color:#747474;font-size: 10px}
+
+.TabHead:hover {background-color:#da8a00;color:white;}
+
+.TabTab {border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;display: none;color: #E5E5E5}
+
+.activeTabHead, .activeTabHead:hover {background: #404040;color:#bebebe; cursor:default; !important}
+
+#tabB0 {display: block}
+
+#tabZ0 {display: block}
+
+
+
+/*-- Stats Blocks --*/
+
+.latest-link {color: #E5E5E5;font: 12px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;text-decoration: none;text-align: left;white-space: nowrap}
+
+.latest-link a:link, .latest-link a:visited {color: #E5E5E5;text-decoration: none}
+
+.latest-link a:hover, .latest-link a:active {color: #d0c287;text-decoration: none}
+
+.viewmore {background: #202020}
+
+
+
+/*-- Tombox wrapper --*/
+
+.tombox {z-index:0;position:relative;background:#414141;border:1px solid #585858;padding:4px;margin-top:10px;overflow:auto;}
+
+.tomboxinner {padding:8px;background:#2f2f2f;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px}
+
+
+
+/*-- Boxes --*/
+
+.box {background: #242424;border: 1px solid #404040;padding: 3px}
+
+.box-title {background: #404040;color: #d0c287;font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;height: 20px}
+
+.box-title a:link, .box-title a:visited {color: #d0c287;text-decoration: none}
+
+.box-title a:hover, .box-title a:active {color: #ffffff;text-decoration: none}
+
+.box-title-left {float: left;background: #404040  url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/box-top-left.gif);width: 6px;height: 20px}
+
+.box-title-right {float: right;background: #404040  url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/box-top-right.gif);width: 6px;height: 20px}
+
+.box-content {color: #E5E5E5;font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;background: #404040;padding-right: 3px;padding-left: 3px}
+
+.box-footer {background: #404040;font: 0px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;height: 3px}
+
+.box-footer-left {float: left;background: #404040;width: 3px;height: 3px}
+
+.box-footer-right {float: right;background: #404040;width: 3px;height: 3px}
+
+#editform .box-content {background: #242424;}
+
+
+
+/*-- ##New## Rounded Corners --*/
+
+.tl, .tr, .bl, .br {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/corners.png);width: 8px;height: 8px;font-size: 0}
+
+.tl, .bl {float: left}
+
+.tr, .br {float: right}
+
+
+
+/*-- Tool Tips --*/
+
+#mmoitooltipbox {display: none;width: 270px;position: absolute}
+
+.tooltip {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/tooltip-bg.png) repeat;border: 1px solid #404040;padding: 3px; -moz-box-shadow: 0 0 1em black; -webkit-box-shadow: 0 0 1em black;}
+
+.tooltipfont1 {color: #BEBF9B}
+
+
+
+/*-- Donation Overlay --*/
+
+div.DonateOverlay {background-image:url(/images/style_mmoi_wowi2/misc/donate-box.png); width:600px; height:270px; display:none; padding:28px} 
+
+div.DonateOverlay div.close {position:absolute; right:5px; top:5px; cursor:pointer; height:35px; width:35px}
+
+#DonateOverlay .Donate_button {text-align:center; padding-top: 20px; font-size: 9px}
+
+#DonateOverlay .Disable {text-align:right; padding-top: 50px; font-size: 8px; color: #777}
+
+#DonateOverlay .Disable a:link, #DonateOverlay .Disable a:visited {color: #777; text-decoration: none}
+
+
+
+/*-- Download Categories --*/
+
+.dlcat-box .addoncatarrow {padding-bottom:15px;background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/addoncat-arrow.png) no-repeat bottom left}
+
+.dlcat-box .subcats {background-color:#353535;padding:6px;margin-bottom:8px}
+
+.dlcat-box .catinfo {float:right;padding-top:12px;font-size:9px;color:#999;font-style:italic;font-family: Verdana}
+
+.dlcat-box .icon {float: left;margin: 8px -4px 0 8px}
+
+.dlcat-box .title {padding-top: 8px;font: bold 22px verdana, geneva, lucida, arial, helvetica, sans-serif;  color: #f8e568}
+
+.dlcat-box .title a:link, .dlcat-box .title a:visited {color: #f8e568;text-decoration: none}
+
+.dlcat-box .title a:hover, .dlcat-box .title a:active {color: #FFCC00;text-decoration: none}
+
+.dlcat-box .misc {float: right; padding: 8px 8px 0 0; text-align: right; color: #979797}
+
+.dlcat-box .misc a:link, .dlcat-box .misc a:visited {color: #f8e568;text-decoration: none}
+
+.dlcat-box .misc a:hover, .dlcat-box .misc a:active {color: #FF9900;text-decoration: none}
+
+.dlcat-box .subcats {clear: both;overflow: hidden;text-align: center;font-size: 11px;padding: 8px 8px 0 8px}
+
+.dlcat-box .subcats a:link, .dlcat-box .subcats a:visited {color: #fff;text-decoration: none;}
+
+.dlcat-box .subcats a:hover, .dlcat-box .subcats a:active {color: #69d3ff;text-decoration: none;}
+
+.dlcat-box .subcats div {width: 150px;height: 65px;background-repeat:no-repeat;background-position: 6px 6px;text-align: left;vertical-align:text-top;display:inline-block;zoom: 1;*display: inline;}
+
+.dlcat-box .subcats .filecount {color: #8b8b8b;font-size: 8px;font-style:italic}
+
+.dlcat-box .subcats .subicon2 {float: left;width: 57px;height: 57px}
+
+.dlcat-box .subcats .subicon2 a, .dlcat-box .subcats .subicon2 a:visited {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/downloads/subcat_icon_border.png) no-repeat;_background:none;width: 57px;height: 57px;display:block}
+
+.dlcat-box .subcats .subicon2 a:hover, .dlcat-box .subcats .subicon2 a:active {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/downloads/subcat_icon_border2.png) no-repeat;_background:none}
+
+.dlcat-box .subcats .subtitle {width: 80px;padding-top: 4px}
+
+.dlcat-box .carrot {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/downloads/dlcat_carrot.png) no-repeat bottom left;height: 55px}
+
+.dlcat-box .topper {background: #404040;height: 8px}
+
+.dlcat-box .tr {background-position: 8px 0}
+
+.dlcat-box .bl {background-position: 0 8px}
+
+.dlcat-box .br {background-position: 8px 8px}
+
+.searchcaticon {border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;width:45px;height:45px}
+
+
+
+/*-- 3 Col Layout --*/
+
+#colmask {position:relative;clear:both;float:left;width:100%;overflow:hidden;background-color:#262626}
+
+#colmid {float:left;width:200%;margin-left:-325px;position:relative;right:100%;background-color:#2f2f2f}
+
+#colleft {float:left;width:100%;margin-left:-186px;background-color:#2b2b2b;padding-bottom:50px}
+
+#col1wrap {float:left;width:50%;padding-bottom:1em;}
+
+#col1 {margin:0 0 0 511px;position:relative;left:100%;overflow:hidden;}
+
+#col2 {margin-top:10px;float:right;width:170px;position:relative;left:183px;}
+
+#col3 {margin-top:10px;float:right;width:300px;position:relative;left:668px;}
+
+
+
+/*-- AddOn page Col3 items--*/
+
+#uploadaddon{margin-bottom:10px;background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/upload-addon.png) no-repeat}
+
+#uploadaddon:hover{background-position:0px -54px}
+
+#uploadaddon a{width:300px;height:51px;display:block}
+
+#fame15{margin-top:10px}
+
+#famebox {padding:10px;margin: 6px 0 6px 0;background-color:#1c1c1c;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px}
+
+#famebox .itemtitle {font-size:16px;color:#fff}
+
+#famebox .itemtitle a {color:#fff}
+
+#famebox .itemtitle a:hover {color:#da8a00}
+
+#famebox #famepic {padding:10px;margin:5px 0 5px 0;background-color:#2c2c2c;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}
+
+#comments, #wowinews, #zamnews {margin-bottom:10px}
+
+#commentlist, #wowinewslist, #zamnewslist {list-style-type:none;margin:0;padding:0}
+
+#commentlist .title, #wowinewslist .title, #zamnewslist .title {padding:8px 0 0 8px}
+
+#commentlist .title a, #wowinewslist .title a, #zamnewslist .title a {text-decoration:none}
+
+#commentlist .title a:hover, #wowinewslist .title a:hover, #zamnewslist .title a:hover {color:#60bcd8}
+
+#commentlist .info, #wowinewslist .info, #zamnewslist .info {padding:0 0 8px 8px;font-size: 10px;color:#999;text-decoration:none}
+
+#comments .alt1, #wowinews .alt1, #zamnews .alt1 {background-color:#2f2f2f}
+
+#comments .alt2, #wowinews .alt2, #zamnews .alt2 {background-color:#262626}
+
+
+
+
+
+/*-- AddOn Promos --*/
+
+#col1 #promos {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/promo-bg.jpg) no-repeat;height:98px}
+
+#promos #carousel {height:98px}
+
+#promos #carousel .promoimage {float:right;width:180px;height:98px}
+
+#promos #carousel .promotext {font-size:12px;color:#CCC;padding:16px; margin-right:180px}
+
+#carousel .promotext .itemtitle {font-size:16px;color:#0CF;padding-bottom:4px}
+
+
+
+/*-- Search Bar --*/
+
+#col1 .content{margin:10px}
+
+#col1 #search {padding: 15px 0 0 10px;height:54px;background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/searchbar-bg.png) repeat-x top left;}
+
+#col1 #search #searchinput{height:37px;background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/searchbar.png) repeat-x top left;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;margin:0 95px 0 0}
+
+#col1 #search #searchinput input{width:88%;background:transparent;color: #414141;font-size: 20px;border: 0px;outline:0;padding: 6px 4px 0 8px;height: 32px}
+
+#col1 #search #searchinput #spyglass{float:right; padding: 8px 8px 0 0}
+
+#col1 #search #advanced{float:right;font-size:11px;margin:12px 20px 0 0;}
+
+#col1 #search #advanced a{color:#a4a4a4;text-decoration:none}
+
+
+
+/*-- AddOn Col2 Lists --*/
+
+#hotlist, #latestlist {list-style-type:none;margin:0 10px 0 0;padding:0}
+
+#hotlist .title, #latestlist .title {border-top: 2px solid #262626}
+
+#hotlist .title, #hotlist .title a, #latestlist .title, #latestlist .title a {text-decoration:none;padding-top:6px}
+
+#hotlist .title a:hover, #latestlist .title a:hover {color:#60bcd8}
+
+#hotlist .author, #hotlist .author a, #latestlist .author, #latestlist .author a {font-size: 10px;color:#999;text-decoration:none}
+
+#hotlist .author a:hover, #latestlist .author a:hover {color:#4f95aa}
+
+#hotlist .category, #latestlist .category {font-size: 10px;color:#999;padding-bottom:10px}
+
+#hotlist .first, #latestlist .first {border:none !important}
+
+#latestlist .more, #latestlist .more a {margin-top:3px;font-size: 10px;color:#4f95aa;text-decoration:none}
+
+#latestlist .more a:hover {color:#0CF}
+
+
+
+/*-- Find Page --*/
+
+.findpage-search {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/findpage-searchbar.png) no-repeat;_background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/findpage-searchbar.gif) no-repeat;width: 700px;height: 65px}
+
+.findpage-search-title {float: left;font: bold 14px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;margin-top: 23px;margin-left: 15px}
+
+.findpage-search-area {float: right;margin-top: 15px;margin-right: 15px}
+
+.findpage-search-options {width: 420px;text-align: left;font: 12px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif}
+
+.findpage-more {width: 700px;height: 450px;margin-top: 10px}
+
+.findpage-stats {float: left;padding-top: 6px;background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/findpage-lgpanel.png) no-repeat;_background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/findpage-lgpanel.gif) no-repeat;width: 310px;height: 380px}
+
+.findpage-cat {float: left;padding-top: 6px;background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/findpage-cat.png) no-repeat;_background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/findpage-cat.gif) no-repeat;width: 190px;height: 380px;margin-left: 5px;font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif}
+
+.findpage-promo {color: #FFCC00}
+
+
+
+/*-- Raffle Contest --*/
+
+#raffleframe {margin-left:-8px;margin-right:-8px;padding-left:6px;padding-top:6px;background: url(http://s.wowinterface.com/images/raffle/winterveil-bg.jpg) repeat-x top left}
+
+
+
+/*-- Survival Guide --*/
+
+#survivalframe {margin-left:-8px;padding-left:6px;padding-top:6px;background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/survivalguide/4.0.1-bg.jpg) no-repeat}
+
+#survivallist ul {list-style-type:none;margin:0;padding:1em 0 0 1em}
+
+#survivallist li {background:#242424;border-top:1px solid #404040;margin:0 0 2em 0;position:relative}
+
+#survivallist #live {background:#404040; border-top:1px solid #BEBF9B;}
+
+#survivallist #beta {background:#333; border-top:1px solid #7e7e76;}
+
+#survivallist .title {background:#181818;border:1px solid #404040;left:2em;padding:2px 4px;position:absolute;top:-11px}
+
+#survivallist .titlelive {background:#383838;border:1px solid #BEBF9B;left:2em;padding:2px 4px;position:absolute;top:-11px}
+
+#survivallist .titlebeta {background:#333;border:1px solid #7e7e76;left:2em;padding:2px 4px;position:absolute;top:-11px}
+
+#survivallist img {vertical-align:bottom}
+
+#survivallist span {color:#999}
+
+#survivallist .desc {color:#ccc;margin:0; padding:1em}
+
+#survivallist em {color:#f5e5a1; font-style:normal}
+
+#survivallist .wowace {color:#bebf9b; font-weight:bold; text-decoration:none}
+
+#survivallist #explanation {background:none;border:0;font-size:8pt;margin-top:-25px}
+
+#survivallist #explanation div {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/survivalguide/survivalguide4.0.1.png) top right no-repeat;padding-top:180px}
+
+
+
+/*-- Beta Guide --*/
+
+#betaframe {margin-left:-8px;padding-left:6px;background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/survivalguide/cataclysm-bg.jpg) no-repeat}
+
+#betalist ul {list-style-type:none;margin:0;padding:1em 0 0 1em}
+
+#betalist li {background:#242424;border-top:1px solid #404040;margin:0 0 2em 0;position:relative}
+
+#betalist #live {background:#404040; border-top:1px solid #BEBF9B;}
+
+#betalist #beta {background:#333; border-top:1px solid #7e7e76;}
+
+#betalist .title {background:#181818;border:1px solid #404040;left:2em;padding:2px 4px;position:absolute;top:-11px}
+
+#betalist .titlelive {background:#383838;border:1px solid #BEBF9B;left:2em;padding:2px 4px;position:absolute;top:-11px}
+
+#betalist .titlebeta {background:#333;border:1px solid #7e7e76;left:2em;padding:2px 4px;position:absolute;top:-11px}
+
+#betalist img {vertical-align:bottom}
+
+#betalist span {color:#999}
+
+#betalist .desc {color:#ccc;margin:0; padding:1em}
+
+#betalist em {color:#f5e5a1; font-style:normal}
+
+#betalist .wowace {color:#bebf9b; font-weight:bold; text-decoration:none}
+
+#betalist #explanation {background:none;border:0;font-size:8pt;margin-top:-25px}
+
+#betalist #explanation div {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/survivalguide/betaguidecataclysm.png) top right no-repeat;padding-top:230px;padding-bottom:10px;}
+
+
+
+/*-- Weekly Picks --*/
+
+#weekly-picks {padding-left: 10px;min-width: 950px}
+
+#weekly-logo {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/weeklypick/weekly-pick-bg.png) repeat-x bottom left;color: #ffffff;font-size: 20px;font-weight: normal;margin-right: 20px;border-bottom: 1px solid #3a3a39}
+
+#weekly-rss {float: right;margin-top: 60px}
+
+#weekly-title {font-size: 20px;font-weight: normal}
+
+#weekly-author {font-size: 10px;font-weight: normal}
+
+#weekly-box {clear: right;float: right;position: relative;padding: 2px;margin: 10px 10px 10px 10px;border-collapse: collapse;border: 1px solid #3a3a39;background: #141414;width: 300px}
+
+#weekly-comments {border-top: 1px solid #3a3a39;padding-top: 5px;color: #9e9e9e}
+
+#weekly-next {float: right;padding: 6px;color: #9e9e9e;border: 1px solid #3a3a39;background: #282828;text-align: center}
+
+#weekly-body {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/weeklypick/gears-bg.png) no-repeat top left;padding: 5px 10px 0 20px}
+
+
+
+/*-- Promos --*/
+
+.promo-weeklypick {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/content/promo-weeklypicks.png) no-repeat top left; width: 300px; height: 75px; padding-bottom:10px}
+
+.promo-social {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/content/social-bg.png) no-repeat top left; width: 300px; height: 35px; margin-bottom:10px}
+
+
+
+/*-- Lightbox --*/
+
+#lightbox{position:absolute;left:0;width:100%;z-index:100;text-align:center;line-height:0}
+
+#lightbox a img{border:none}
+
+#outerImageContainer{position:relative;background-color:#666;width:250px;height:250px;margin:0 auto}
+
+#imageContainer{padding:10px}
+
+#loading{position:absolute;top:40%;left:0%;height:25%;width:100%;text-align:center;line-height 0}
+
+#hoverNav{position:absolute;top:0;left:0;height:100%;width:100%;z-index:10}
+
+#imageContainer>#hoverNav{left:0}
+
+#hoverNav a{outline:none}
+
+#prevLink, #nextLink{width:49%;height:100%;background:transparent url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/clear.gif) no-repeat;display:block}
+
+#prevLink {left:0;float:left}
+
+#nextLink {right:0;float:right}
+
+#prevLink:hover, #prevLink:visited:hover {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/prevlabel.png) left 50% no-repeat}
+
+#nextLink:hover, #nextLink:visited:hover {background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/nextlabel.png) right 50% no-repeat}
+
+#imageDataContainer{font:10px Verdana, Helvetica, sans-serif;background-color:#666;margin: 0 auto;line-height: 1.4em}
+
+#imageData{padding:0 10px;color:white}
+
+#imageData #imageDetails{width:70%;float:left;text-align:left}  
+
+#imageData #caption{font-weight:bold}
+
+#imageData #numberDisplay{display:block;clear:left;padding-bottom:1.0em}
+
+#imageData #numberDisplay a {color:white;padding-left:5px;padding-right:5px;}
+
+#imageData #bottomNavClose{width:66px;float:right;padding-bottom:0.7em}
+
+#imageData #helpDisplay {clear:left;float:left;display:block}
+
+#overlay{position:absolute;top:0;left:0;z-index:90;width:100%;height:500px;background-color:#000;filter:alpha(opacity=60);-moz-opacity: 0.6;opacity: 0.6;display: none}
+
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility: hidden}
+
+#lightboxIframe {display: none;}
+
+
+
+/*-- Footer --*/
+
+.footer-bg {color: #5b5e61;background: #181818;border-bottom: 1px solid #404040;height: 1px}
+
+#footer {width:100%;background: url(http://s.wowinterface.com/images/style_mmoi_wowi2/layout/footer-bg.png) repeat-x top left;padding-top:30px}
+
+#footer .itemtitle{font-family: Verdana;font-size:14px;color:#CCC;border-bottom: 2px solid #333;padding-bottom:3px;margin-bottom:5px}
+
+#footer #sitelinks, #footer #networklinks{float:left; padding-right:80px;font-size:10px}
+
+#footer #sitelinks ul, #footer #networklinks ul {font-size:10px;list-style-type:none;margin:0;padding:3px 0 30px 0;color:#666}
+
+#footer #networklinks ul {float:left; width:170px}
+
+#footer #sitelinks ul a , #footer #networklinks ul a {color:#666;text-decoration:none}
+
+#footer #sitelinks ul a:hover , #footer #networklinks ul a:hover {color:#fff}
+
+#footer #copyright {text-align:right; color:#CCC}
+
+#footer #copyright a {color:#CCC;text-decoration:none}
+
+#footer #copyright a:hover {color:#fff}
+
+
+
+/*-- MISC --*/
+
+input:-webkit-autofill {color: #2a2a2a !important}
+
+.clearfix:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+
+.clearfix {display: inline-block;}
+
+html[xmlns] .clearfix {display: block;}
+
+* html .clearfix {height: 1%;}
+
+.fb-like {border:0;height:20px;margin-bottom:-3px;overflow:hidden;width:85px}
+
+.results .side_1 td.name {color:#F33}
+.results .side_2 td.name {color:#39F}
+
+.results .side_1 td.name a {color:#F33 !important;}
+.results .side_2 td.name a {color:#39F !important;}
+
+.points{font-weight:bold;}
+
+table { border-spacing: 2px 2px;}
+
+.results tr td {padding: 2px 5px 2px 5px;}
+
+a {color: #F1CE51; text-decoration : none; }
+
+.achdescription { font-size : 11px;}
+
+.achname {color : #FFD100 !important; font-size : 13px; }
+
+.displaytable { background-color : Gray; border-spacing : 2px; border-collapse: collapse;}
+.displaytable tr td {border: 1px solid #404040; padding : 4px; }
+.displaytable tr td a {color : #FFD100 !important; font-size : 13px; }
+
+.displaytable tr {background-color : Black; }
+#ach_list{ border : 2px solid #404040; }
+
+
+
+.results { background-color : Gray; border-spacing : 2px; border-collapse: collapse;}
+.results tr td {border: 1px solid #404040; padding : 4px; }
+.results tr td a {color : #FFD100 !important; font-size : 13px; }
+
+.results tr {background-color : Black; }
+
+.recentachievement
+{
+    width: 549px; height : 84px; background-image : url("achievementbackground.png"); 
+}
+
+.recentTitle { position:relative; display:block; left : 90px; top: 5px; width:340px; text-align:center; font-weight:bold;  }
+.recentDescription { position:relative; display:block; left : 93px; top: -65px; width:380px; text-align:center; font-weight:normal; color:Black  }
+.recentPoints { position:relative; display:block; left : 484px; top: 10px; width:50px; text-align:center; font-weight:normal; color:white;font-weight:bold;  }
+.recentIcon { position:relative; display:block; left : 12px; top: -18px; width:50px; text-align:center; font-weight:normal; color:white;font-weight:bold;  }
+.recentEarned { position:relative; display:block; left : 458px; top: -22px; width:100px; text-align:center; font-weight:normal; color:#FF9A3D;font-weight:bold; font-size:8px }
+.recentIconImage { width:48px; height: 48px;  }
+
+.playerTop {  }
+
+
+.recentAchievements { float: left; width: 560px; display: inline; }
+
+.clear { clear: both; }
+
+.playerStatus {float: left; width: 300px; margin-left : 20px; }
+.innerPlayerStatus{ padding : 5px; background: black; color : White;  }
+
+
+
+
+/* Bar which is placed behind the progress */
+.ui-progress-bar {
+  /* Usual setup stuff */
+  position: relative;
+  height: 22px;
+  
+  /* Pad right so we don't cover the borders when fully progressed */
+  padding-right: 2px;
+  
+  /* For browser that don't support gradients, we'll set a blanket background colour */
+  background-color: #abb2bc;
+  
+  /* Rounds the ends, we specify an excessive amount to make sure they are completely rounded */
+  /* Adjust to your liking, and don't forget to adjust to the same amount in .ui-progress */
+  border-radius: 35px;
+  -moz-border-radius: 35px;
+  -webkit-border-radius: 35px;
+  
+  /* Webkit background gradient */
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b6bcc6), color-stop(1, #9da5b0));
+  /* Mozilla background gradient */
+  background: -moz-linear-gradient(#9da5b0 0%, #b6bcc6 100%);
+  
+  /* Give it the inset look by adding some shadows and highlights */
+  -webkit-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.5), 0px 1px 0px 0px #FFF;
+  -moz-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.5), 0px 1px 0px 0px #FFF;
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.5), 0px 1px 0px 0px #FFF;
+}
+
+/* Progress part of the progress bar */
+.ui-progress {
+  /* Usual setup stuff */
+  position: relative;
+  display: block;
+  overflow: hidden;
+  
+  /* Height should be 2px less than .ui-progress-bar so as to not cover borders and give it a look of being inset */
+  height: 20px;
+  
+  /* Rounds the ends, we specify an excessive amount to make sure they are completely rounded */
+  /* Adjust to your liking, and don't forget to adjust to the same amount in .ui-progress-bar */
+  -moz-border-radius: 35px;
+  -webkit-border-radius: 35px;
+  border-radius: 35px;
+  
+  /* Set the background size so the stripes work correctly */
+  -webkit-background-size: 44px 44px; /* Webkit */
+  
+  /* For browser that don't support gradients, we'll set a blanket background colour */
+  background-color: #74d04c;
+  
+  /* Webkit background stripes and gradient */
+  background: -webkit-gradient(linear, 0 0, 44 44,
+    color-stop(0.00, rgba(255,255,255,0.17)),
+    color-stop(0.25, rgba(255,255,255,0.17)),
+    color-stop(0.26, rgba(255,255,255,0)),
+    color-stop(0.50, rgba(255,255,255,0)),
+    color-stop(0.51, rgba(255,255,255,0.17)),
+    color-stop(0.75, rgba(255,255,255,0.17)),
+    color-stop(0.76, rgba(255,255,255,0)),
+    color-stop(1.00, rgba(255,255,255,0))
+  ), -webkit-gradient(linear, left bottom, left top, color-stop(0, #74d04c), color-stop(1, #9bdd62));
+  
+  /* Mozilla (Firefox etc) background stripes */
+  /* Note: Mozilla's support for gradients is more true to the original design, allowing gradients at 30 degrees, as apposed to 45 degress in webkit. */
+  background: -moz-repeating-linear-gradient(top left -30deg, 
+    rgba(255,255,255,0.17), 
+    rgba(255,255,255,0.17) 15px, 
+    rgba(255,255,255,0) 15px, 
+    rgba(255,255,255,0) 30px
+  ), -moz-linear-gradient(#9bdd62 0%, #74d04c 100%);
+  
+  /* Webkit embossing */
+  -webkit-box-shadow: inset 0px 1px 0px 0px #dbf383, inset 0px -1px 1px #58c43a;
+  /* Mozilla embossing */
+  -moz-box-shadow: inset 0px 1px 0px 0px #dbf383, inset 0px -1px 1px #58c43a;
+  /* IE9 and Opera embossing */
+  box-shadow: inset 0px 1px 0px 0px #dbf383, inset 0px -1px 1px #58c43a;
+  
+  /* Give it a higher contrast outline */
+  border: 1px solid #4c8932;
+  
+  /* Webkit magic */
+  -webkit-animation: animate-stripes 2s linear infinite;
+  
+  /* TODO: Wait for Mozilla to support animation, then implement */
+}
+
+/* Progress indicator text */
+.ui-progress span.ui-label {
+  font-size: 0.8em;
+  position: absolute;
+  right: 0;
+  line-height: 20px;
+  padding-right: 12px;
+  color: rgba(0,0,0,0.6);
+  text-shadow: rgba(255,255,255, 0.45) 0 1px 0px;
+  white-space: nowrap;
+}

@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs", "Jobs", "{1DACD32C-C566-4E65-A094-8F7A8B6B899F}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple Achievement Parser", "Simple Achievement Parser\Simple Achievement Parser.csproj", "{8E20EBFC-683F-4330-B961-19F71B17BE85}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AchievementSherpa.Business", "Business Layer\AchievementSherpa.Business.csproj", "{2F4D75FD-33D0-4CBC-8AFF-59CDB3523B5D}"
@@ -14,8 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AchievementSherpa.PageParser", "AchievementSherpa.PageParser\AchievementSherpa.PageParser.csproj", "{8E8EC6E7-11AC-4277-A8EB-6A23A74C3E03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AchievementSherpa.WowApi", "AchievementSherpa.WowApi\AchievementSherpa.WowApi.csproj", "{E0FE5AF7-59D8-4670-8827-EC742BC3A55A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs", "Jobs", "{1DACD32C-C566-4E65-A094-8F7A8B6B899F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Update Achievement Ranking", "Update Achievement Ranking\Update Achievement Ranking.csproj", "{87CF3816-40F8-4661-B8DE-29EB7D45BB50}"
 EndProject

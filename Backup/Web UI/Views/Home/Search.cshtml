@@ -1,0 +1,16 @@
+﻿@model Web_UI.Models.CharacterList
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Search</h2>
+
+@foreach (AchievementSherpa.Business.Character c in Model.Characters)
+{
+     @Html.ActionLink(c.Name,
+                            "Index", "Player", new { region = c.Region, server = c.Server, player=c.Name }, null)
+                            <br />
+    
+}

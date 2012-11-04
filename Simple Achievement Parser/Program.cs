@@ -22,7 +22,7 @@ namespace AchievementSherpa.Business
         // /wow/en/character/kilrogg/debz/achievement#169:170
 
         static readonly string GuildFileName = "guilds.dat";
-        static bool parseAchivements = false;
+        static bool parseAchivements = true;
         static bool parseGuilds = false;
         private static bool restrictToKilrogg = true;
         static int maxDaysOld = 30; 

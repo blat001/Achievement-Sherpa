@@ -1,0 +1,29 @@
+﻿@model IList<string>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <div>
+
+    <table class="results">
+   
+
+        @foreach (var item in Model)
+        {
+             <tr>
+        <td>@Html.ActionLink(item, "ServerRanking", "Ranking", new { server = item }, new { }) </td>
+    </tr>
+       
+        }
+        </table>
+    </div>
+</body>
+</html>
