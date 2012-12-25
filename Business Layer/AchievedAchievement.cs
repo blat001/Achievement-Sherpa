@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AchievementSherpa.Business;
-using MongoDB.Driver;
 
 namespace AchievementSherpa.Business
 {
@@ -20,7 +19,7 @@ namespace AchievementSherpa.Business
             set;
         }
 
-        public string AchievementId
+        public int BlizzardID
         {
             get;
             set;

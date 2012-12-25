@@ -1,0 +1,32 @@
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\Web Services.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\Web Services.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\Antlr3.Runtime.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\EntityFramework.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\Newtonsoft.Json.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Net.Http.Formatting.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Helpers.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Http.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Http.WebHost.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Mvc.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Optimization.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Providers.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Razor.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.WebPages.Deployment.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.WebPages.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.WebPages.Razor.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\WebGrease.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\EntityFramework.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\Newtonsoft.Json.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Net.Http.Formatting.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Helpers.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Http.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Http.WebHost.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Mvc.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.Razor.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.WebPages.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.WebPages.Deployment.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\bin\System.Web.WebPages.Razor.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\obj\Debug\Web Services.csprojResolveAssemblyReference.cache
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\obj\Debug\Web Services.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Web Services\obj\Debug\Web Services.pdb

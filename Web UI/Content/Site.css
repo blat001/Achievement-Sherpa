@@ -1592,10 +1592,10 @@ html[xmlns] .clearfix {display: block;}
 .fb-like {border:0;height:20px;margin-bottom:-3px;overflow:hidden;width:85px}
 
 .results .side_1 td.name {color:#F33}
-.results .side_2 td.name {color:#39F}
+.results .side_0 td.name {color:#39F}
 
 .results .side_1 td.name a {color:#F33 !important;}
-.results .side_2 td.name a {color:#39F !important;}
+.results .side_0 td.name a {color:#39F !important;}
 
 .points{font-weight:bold;}
 

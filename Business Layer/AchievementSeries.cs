@@ -10,16 +10,16 @@ namespace AchievementSherpa.Business
     {
         public AchievementSeries()
         {
-            AchievementIds = new List<string>();
+            AchievementIds = new List<int>();
         }
 
         public void AddAchievementToSeries(Achievement achievement)
         {
-            AchievementIds.Add(achievement._id);
+            AchievementIds.Add(achievement.BlizzardID);
             achievement.Series = this;
         }
 
-        public IList<string> AchievementIds
+        public IList<int> AchievementIds
         {
             get;
             set;

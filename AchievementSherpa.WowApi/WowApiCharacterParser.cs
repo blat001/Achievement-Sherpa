@@ -38,6 +38,21 @@ namespace AchievementSherpa.WowApi
                 character.Thumbnail = downloadedCharacter.Thumbnail;
                 character.Guild = downloadedCharacter.Guild.Name;
 
+                if (downloadedCharacter.Race == WowDotNetAPI.Models.CharacterRace.BLOOD_ELF ||
+                    downloadedCharacter.Race == WowDotNetAPI.Models.CharacterRace.GOBLIN ||
+                    downloadedCharacter.Race == WowDotNetAPI.Models.CharacterRace.ORC ||
+                    downloadedCharacter.Race == WowDotNetAPI.Models.CharacterRace.PANDAREN_HORDE ||
+                    downloadedCharacter.Race == WowDotNetAPI.Models.CharacterRace.TAUREN ||
+                    downloadedCharacter.Race == WowDotNetAPI.Models.CharacterRace.TROLL ||
+                    downloadedCharacter.Race == WowDotNetAPI.Models.CharacterRace.UNDEAD)
+                {
+                    character.Side = Achievement.HordeOnly;
+                }
+                else
+                {
+                    character.Side = Achievement.AllianceOnly;
+                }
+
                 for (int i = 0; i < downloadedCharacter.Achievements.AchievementsCompleted.Count(); i++)
                 {
                     int blizzardId = downloadedCharacter.Achievements.AchievementsCompleted.ElementAt(i);

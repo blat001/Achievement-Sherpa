@@ -26,6 +26,11 @@ namespace AchievementSherpa.Data.MongoDb
             return Collection.FindAll().ToList();
         }
 
+        public void DeleteAllCharacters()
+        {
+            Collection.RemoveAll();
+        }
+
         public Character FindCharacter(Character character)
         {
             IDictionary<string, object> queryParams = new Dictionary<string, object>();
@@ -57,7 +62,14 @@ namespace AchievementSherpa.Data.MongoDb
 
         public void DeleteCharacter(Character character)
         {
-           // Collection.Remove(
+            IDictionary<string, object> queryParams = new Dictionary<string, object>();
+
+            CultureInfo cultureInfo = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cultureInfo.TextInfo;
+            queryParams.Add("Name", textInfo.ToTitleCase(character.Name));
+            queryParams.Add("Server", textInfo.ToTitleCase(character.Server));
+            queryParams.Add("Region", character.Region.ToUpperInvariant());
+            Collection.Remove(new QueryDocument(queryParams));
         }
 
 

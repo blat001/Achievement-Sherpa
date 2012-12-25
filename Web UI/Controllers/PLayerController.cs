@@ -25,13 +25,21 @@ namespace Web_UI.Controllers
         }
         public ActionResult Index(string server, string player, string region)
         {
-
-
             Character character = _characterService.FindCharacter(region, server, player);
+
+            
 
             if (character == null)
             {
-                return Redirect("~/");
+                // Check for a valid character
+                if (string.IsNullOrWhiteSpace(server) || string.IsNullOrWhiteSpace(player) || string.IsNullOrWhiteSpace(region))
+                {
+
+                    return Redirect("~/");
+                }
+
+                return RedirectToAction("Parse", new { name = player, server = server, region = region });
+
             }
 
             IList<Achievement> recommended = _achievementService.GetRecommendedAchievements(character);

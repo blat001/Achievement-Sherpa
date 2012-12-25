@@ -18,6 +18,8 @@ namespace AchievementSherpa.Business
 
         void DeleteCharacter(Character character);
 
+        void DeleteAllCharacters();
+
         int CalculateRankWithinGuild(Character character);
         int CalculateRankWithinServer(Character character);
         int CalculateRankWithinWord(Character character);

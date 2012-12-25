@@ -30,7 +30,7 @@ namespace Web_UI
             routes.MapRoute(
                 "Individual Plaer", // Route name
                 "player/{region}/{server}/{player}", // URL with parameters
-                new { controller = "PLayer", action = "Index", server = "", player="", region="" } // Parameter defaults
+                new { controller = "Player", action = "Index", server = "", player="", region="" } // Parameter defaults
             );
             routes.MapRoute(
             "Guild Ranking", // Route name

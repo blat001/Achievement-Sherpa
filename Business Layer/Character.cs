@@ -108,27 +108,27 @@ namespace AchievementSherpa.Business
             {
                 return false;
             }
-            return Achievements.Where(aa => aa.AchievementId == achievement._id).Count() > 0;
+            return Achievements.Where(aa => aa.BlizzardID == achievement.BlizzardID).Count() > 0;
         }
 
 
-        public bool HasAchieved(string achievement)
+        public bool HasAchieved(int achievement)
         {
-            return Achievements.Where(aa => aa.AchievementId == achievement).Count() > 0;
+            return Achievements.Where(aa => aa.BlizzardID == achievement).Count() > 0;
         }
 
         public void AddNewAchivement(DateTime whenAchieved, Achievement achievement)
         {
             if (achievement != null)
             {
-                Achievements.Add(new AchievedAchievement() { WhenAchieved = whenAchieved, AchievementId = achievement._id, Points = achievement.Points });
+                Achievements.Add(new AchievedAchievement() { WhenAchieved = whenAchieved, BlizzardID = achievement.BlizzardID, Points = achievement.Points });
             }
             
         }
 
-        public string GetHighestAchievementInSeries(AchievementSeries series)
+        public int GetHighestAchievementInSeries(AchievementSeries series)
         {
-            string maxAchievement = null;
+            int maxAchievement = 0;
             for (int i = 0; i < series.AchievementIds.Count; i++)
             {
                 if (HasAchieved(series.AchievementIds[i]))

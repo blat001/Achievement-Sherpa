@@ -29,7 +29,10 @@ namespace AchievementSherpa.PageParser
             }
 
             string achievementId = achievementNode.Attributes["data-id"].Value;
-            Achievement achievement = _service.Find(achievementId);
+            int blizzardId = 0;
+            int.TryParse(achievementId, out blizzardId);
+
+            Achievement achievement = _service.Find(blizzardId);
 
             if (achievement == null)
             {
@@ -87,10 +90,12 @@ namespace AchievementSherpa.PageParser
                         if ( match.Success )
                         {
                             string subAchievementId = match.Groups["achievementid"].Value;
-                            Achievement subAchievement = _service.Find(subAchievementId);
+                            int blizzardId = 0;
+                            int.TryParse(subAchievementId, out blizzardId);
+                            Achievement subAchievement = _service.Find(blizzardId);
                             if (subAchievement == null)
                             {
-                                subAchievement = new Achievement() { BlizzardID = subAchievementId };
+                                subAchievement = new Achievement() { BlizzardID = blizzardId };
                                 subAchievement.Name = GetValueAsString(subNode, ".//h3");
                                 subAchievement.Description = GetValueAsString(subNode, ".//div[@class='color-tooltip-yellow']");
                                 subAchievement.Points = GetValueAsInt32(subNode, ".//span[@class='points border-3']");

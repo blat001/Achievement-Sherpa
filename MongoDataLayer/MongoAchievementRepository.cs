@@ -1,12 +1,9 @@
-﻿using System;
+﻿using AchievementSherpa.Business;
+using MongoDB.Bson;
+using MongoDB.Driver;
+using MongoDB.Driver.Builders;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using AchievementSherpa.Business;
-using AchievementSherpa.Business;
-using MongoDB.Driver;
-using MongoDB.Bson;
-using MongoDB.Driver.Builders;
 
 namespace AchievementSherpa.Data.MongoDb
 {
@@ -16,6 +13,11 @@ namespace AchievementSherpa.Data.MongoDb
         public MongoAchievementRepository()
             : base("Achievements")
         {
+        }
+
+        public void DeleteAllAchievements()
+        {
+            Collection.RemoveAll();
         }
 
         public Achievement FindByAchievementId(string achievementId)
@@ -32,7 +34,7 @@ namespace AchievementSherpa.Data.MongoDb
             return Collection.Find(Query.In("_id", achivementIds)).ToList();
         }
 
-        public AchievementSherpa.Business.Achievement Find(string blizzardId)
+        public AchievementSherpa.Business.Achievement Find(int blizzardId)
         {
             return Collection.FindOne(new QueryDocument("BlizzardID", blizzardId));
         }

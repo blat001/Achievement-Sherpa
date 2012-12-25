@@ -1,7 +1,13 @@
-C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Debug\AchievementSherpa.Data.MongoDb.dll
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Debug\AchievementSherpa.Data.MongoDb.pdb
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Debug\AchievementSherpa.Business.dll
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Debug\AchievementSherpa.Business.pdb
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\obj\Debug\AchievementSherpa.Data.MongoDb.dll
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\obj\Debug\AchievementSherpa.Data.MongoDb.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\obj\Debug\AchievementSherpa.Data.MongoDb.csprojResolveAssemblyReference.cache
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Debug\MongoDB.Bson.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Debug\MongoDB.Driver.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Debug\MongoDB.Bson.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Debug\MongoDB.Bson.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Debug\MongoDB.Driver.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Debug\MongoDB.Driver.xml

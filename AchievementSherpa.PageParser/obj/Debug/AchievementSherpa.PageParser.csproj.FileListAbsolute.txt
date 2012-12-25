@@ -1,4 +1,3 @@
-C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.PageParser\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.PageParser\bin\Debug\AchievementSherpa.PageParser.dll
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.PageParser\bin\Debug\AchievementSherpa.PageParser.pdb
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.PageParser\bin\Debug\AchievementSherpa.Business.dll
@@ -9,3 +8,4 @@ C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\A
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.PageParser\bin\Debug\HtmlAgilityPack.xml
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.PageParser\obj\Debug\AchievementSherpa.PageParser.dll
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.PageParser\obj\Debug\AchievementSherpa.PageParser.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementSherpa.PageParser\obj\Debug\AchievementSherpa.PageParser.csprojResolveAssemblyReference.cache

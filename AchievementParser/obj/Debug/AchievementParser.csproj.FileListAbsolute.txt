@@ -1,7 +1,7 @@
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementParser\bin\Debug\AchievementParser.exe
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementParser\bin\Debug\AchievementParser.pdb
-C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementParser\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementParser\obj\Debug\AchievementParser.exe
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementParser\obj\Debug\AchievementParser.pdb
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementParser\bin\Debug\WowDotNetAPI.dll
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementParser\bin\Debug\WowDotNetAPI.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\AchievementParser\obj\Debug\AchievementParser.csprojResolveAssemblyReference.cache

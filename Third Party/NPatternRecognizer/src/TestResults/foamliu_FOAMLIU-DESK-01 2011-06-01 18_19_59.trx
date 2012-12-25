@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8f7baf7f-e5b3-4886-927e-a71737269d75" name="foamliu@FOAMLIU-DESK-01 2011-06-01 18:19:59" runUser="FAREAST\foamliu" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a3408bb5-404f-4dde-8938-fa8a2e17ca4b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="foamliu_FOAMLIU-DESK-01 2011-06-01 18_19_59">
+      <DeploymentItem filename="C:\Users\foamliu\Desktop\NPatternRecognizer\NPatternRecognizer\bin\NPatternRecognizer.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-06-01T18:19:59.8924572+08:00" queuing="2011-06-01T18:20:01.3115991+08:00" start="2011-06-01T18:20:01.3926072+08:00" finish="2011-06-01T18:20:02.1066786+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CalculateRTest" storage="c:\users\foamliu\desktop\npatternrecognizer\npatternrecognizer\src\testproject1\bin\debug\testproject1.dll" id="42e1c622-9a8e-2280-79e8-c3b9f2e22102">
+      <Execution id="2d3e2595-1490-4c0c-a3c9-c5cc04525ea1" />
+      <TestMethod codeBase="C:/Users/foamliu/Desktop/NPatternRecognizer/NPatternRecognizer/src/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Binary_SVM_SMOTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CalculateRTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="42e1c622-9a8e-2280-79e8-c3b9f2e22102" executionId="2d3e2595-1490-4c0c-a3c9-c5cc04525ea1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2d3e2595-1490-4c0c-a3c9-c5cc04525ea1" testId="42e1c622-9a8e-2280-79e8-c3b9f2e22102" testName="CalculateRTest" computerName="FOAMLIU-DESK-01" duration="00:00:00.0818898" startTime="2011-06-01T18:20:01.4046084+08:00" endTime="2011-06-01T18:20:02.0566736+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d3e2595-1490-4c0c-a3c9-c5cc04525ea1">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject1.Binary_SVM_SMOTest.CalculateRTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at NPatternRecognizer.Algorithm.SVM.Binary_SVM_SMO..ctor(ClassificationProblem problem) in C:\Users\foamliu\Desktop\NPatternRecognizer\NPatternRecognizer\src\NPatternRecognizer\Algorithm\SVM\SVM-SMO.cs:line 743
+   at TestProject1.Binary_SVM_SMOTest.CalculateRTest() in C:\Users\foamliu\Desktop\NPatternRecognizer\NPatternRecognizer\src\TestProject1\Binary_SVM_SMOTest.cs:line 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

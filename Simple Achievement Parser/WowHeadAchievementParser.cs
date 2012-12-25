@@ -122,7 +122,7 @@ namespace AchievementSherpa.Business
                 // now lets find achievement series 
                 foreach (Achievement achievement in _achievementRepository.FindAll())
                 {
-                    CheckForSeriesOfCriteria(achievement);
+                    CheckForSeriesOfCriteria(achievement, true);
                 }
             }
 
@@ -131,9 +131,12 @@ namespace AchievementSherpa.Business
 
         Regex seriesLinkRegex = new Regex(@"achievement=(?<achievementid>\d+)");
         private bool checkSeries = true;
-        private void CheckForSeriesOfCriteria(Achievement achievement)
+        public void CheckForSeriesOfCriteria(Achievement achievement, bool checkCriteria)
         {
-            
+            if (achievement.Series != null)
+            {
+                return;
+            }
             string html = DownloadHtml.GetHtmlFromUrl(new Uri("http://www.wowhead.com/achievement=" + achievement.BlizzardID));
             HtmlDocument document = new HtmlDocument();
             document.LoadHtml(html);
@@ -171,7 +174,9 @@ namespace AchievementSherpa.Business
                             if (m.Success)
                             {
                                 string achivementid = m.Groups["achievementid"].Value;
-                                Achievement nextAchievement = _achievementRepository.Find(achivementid);
+                                int blizzardId = 0;
+                                int.TryParse(achivementid, out blizzardId);
+                                Achievement nextAchievement = _achievementRepository.Find(blizzardId);
                                 if (nextAchievement != null)
                                 {
                                     Console.WriteLine("\t [{0}] Series includes Achievement {1}", order, nextAchievement.Name);
@@ -187,7 +192,7 @@ namespace AchievementSherpa.Business
 
                 // We have a series, this achievement will be blanked out
             }
-            if (criteriaNode != null )
+            if (checkCriteria && criteriaNode != null)
             {
                 HtmlNodeCollection linkNodes = criteriaNode.SelectNodes("..//table[@class='iconlist']//a[contains(@href,'achievement')]");
                 if (linkNodes != null)
@@ -197,7 +202,7 @@ namespace AchievementSherpa.Business
 
                     if (achievement.Criteria == null)
                     {
-                        achievement.Criteria = new List<string>();
+                        achievement.Criteria = new List<int>();
                     }
 
                     achievement.Criteria.Clear();
@@ -207,10 +212,12 @@ namespace AchievementSherpa.Business
                         if (m.Success)
                         {
                             string achivementid = m.Groups["achievementid"].Value;
-                            Achievement requiredAchievement = _achievementRepository.Find(achivementid);
+                            int blizzardId = 0;
+                            int.TryParse(achivementid, out blizzardId);
+                            Achievement requiredAchievement = _achievementRepository.Find(blizzardId);
                             if (requiredAchievement != null)
                             {
-                                achievement.Criteria.Add(requiredAchievement._id);
+                                achievement.Criteria.Add(requiredAchievement.BlizzardID);
                                 Console.WriteLine("\t Criteria includes Achievement {0}", requiredAchievement.Name);
                             }
                         }
@@ -248,11 +255,14 @@ namespace AchievementSherpa.Business
                 foreach (Match iconMatches in iconMatch.Matches(html))
                 {
                     string achivementid = iconMatches.Groups["achievementid"].Value;
+
+                    int blizzardId = 0;
+                    int.TryParse(achivementid, out blizzardId);
                     string icon = iconMatches.Groups["icon"].Value;
 
-                    if (achievements.FirstOrDefault(a => a.BlizzardID == achivementid) != null)
+                    if (achievements.FirstOrDefault(a => a.BlizzardID == blizzardId) != null)
                     {
-                        achievements.FirstOrDefault(a => a.BlizzardID == achivementid).Icon = icon;
+                        achievements.FirstOrDefault(a => a.BlizzardID == blizzardId).Icon = icon;
                     }
 
                 }
@@ -349,14 +359,17 @@ namespace AchievementSherpa.Business
         }
         public Achievement ToAchievement()
         {
+            int blizzardId = 0;
+            int.TryParse(id, out blizzardId);
+
             return new Achievement()
             {
                 Name = name,
                 Description = description,
-                BlizzardID = id,
+                BlizzardID = blizzardId,
                 Category = category,
                 Points = AchievementPoints,
-                ParentCategory = parentcat,
+                ParentCategoryID = -1,
                 Type = type,
                 Side = SideNumber
             };

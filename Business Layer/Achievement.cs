@@ -7,11 +7,26 @@ using AchievementSherpa.Business;
 
 namespace AchievementSherpa.Business
 {
+    public enum AchievementCategories
+    {
+        General = 92,
+        Quests = 96,
+        Exploration = 97,
+        PlayerVsPlayer = 95,
+        DungeonsAndRaids = 168,
+        Professions = 169,
+        Scenarios = 15165,
+        Reputation = 201,
+        WorldEvents = 155,
+        PetBattles = 15117
+
+    }
+
     public class Achievement
     {
         public const int HordeOnly = 1;
-        public const int AllianceOnly = 2;
-        public const int BothSides = 3;
+        public const int AllianceOnly = 0;
+        public const int BothSides = 2;
         public const string FeatsOfStrengthCategory = "81";
         public string _id
         {
@@ -22,7 +37,7 @@ namespace AchievementSherpa.Business
         public Achievement()
         {
             Chained = new List<Achievement>();
-            Criteria = new List<string>();
+            Criteria = new List<int>();
         }
         public int Points
         {
@@ -67,19 +82,15 @@ namespace AchievementSherpa.Business
         }
 
 
-        public IList<string> Criteria
+        public IList<int> Criteria
         {
             get;
             set;
         }
 
-        public string ID
-        {
-            get;
-            set;
-        }
+        
 
-        public string BlizzardID
+        public int BlizzardID
         {
             get;
             set;
@@ -91,7 +102,7 @@ namespace AchievementSherpa.Business
             set;
         }
 
-        public string ParentCategory
+        public int ParentCategoryID
         {
             get;
             set;
@@ -146,5 +157,7 @@ namespace AchievementSherpa.Business
         {
             return Name;
         }
+
+        public int CategoryID { get; set; }
     }
 }

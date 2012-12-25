@@ -60,48 +60,69 @@ Level <span class="level"><%= Model.WowPlayer.Level %></span> <span class="race"
 </div>
 <div class="clear"></div>
 
+     <script>
+         $(document).ready(function () {
+             $("#tabs").tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
+             $("#tabs li").removeClass('ui-corner-top').addClass('ui-corner-left');
+         });
+  </script>
+
+    <style type="text/css">
+
+    /* Vertical Tabs
+----------------------------------*/
+.ui-tabs-vertical { width: 58em; }
+.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 15em; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+        </style>
 
 <h3>Recommended Achivements</h3>
 
 <div id="ach_list">
-<table class="displaytable">
-<tr>
-<td></td>
-<td></td>
-    <td>Achievement</td>
-    <td>Points</td>
-    <td width="200">Category</td>
-    <td width="200"></td>
-    
-</tr>
 
-<%
-    
-    int i = 1;
-    foreach (var achievement in Model.RecommendedAchievements)
-    {
-        if (achievement == null)
-        {
-            continue;
-        }
-        %>
-        <tr>
-        <td><%= i %> (<%= achievement.Rank %>)</td>
-        <td><img src="<%= ImageHelper.MediumImage(achievement) %>" border="0" /></td>
-    <td><a href="http://www.wowhead.com/achievement=<%= achievement.BlizzardID %>"><%= achievement.Name %></a><br /><span class="achdescription"><%=achievement.Description %></span></td>
-    <td><%= achievement.Points %></td>
-    <td><%= CategoryHelper.CategoryName(achievement.ParentCategory == "-1" ? achievement.Category : achievement.ParentCategory)%></td>
-    <td><%= CategoryHelper.CategoryName(achievement.ParentCategory == "-1" ? achievement.ParentCategory : achievement.Category)%></td>
-    
-</tr>
-
+    <div id="tabs">
+    <ul>
+        <li><a href="#top5"><span>Top 5</span></a></li>
         <%
-        i++;
-    }
+            foreach(int value in Enum.GetValues(typeof(AchievementSherpa.Business.AchievementCategories)))
+            {
+                string name = Enum.GetName(typeof(AchievementSherpa.Business.AchievementCategories), value);
+                string displayName =  CategoryHelper.NiceEnumName((AchievementSherpa.Business.AchievementCategories)value);
+                if ( Model.RecommendedAchievements.Where( a => a.CategoryID == value).Count() > 0 )
+                {
+                %>
+                <li><a href="#<%= name %>"><span><%= displayName %> (<%=  Model.RecommendedAchievements.Where( a => a.CategoryID == value || a.ParentCategoryID == value).Count() %>)</span></a></li>       
+                    <%
+                    }
+            }
+            
+         %>
+    </ul>
+    <div id="top5">
+        <% Html.RenderPartial("_PartialPage1", Model.RecommendedAchievements.Take(5)); %>
+    </div>
+         <%
+            foreach(int value in Enum.GetValues(typeof(AchievementSherpa.Business.AchievementCategories)))
+            {
+                string name = Enum.GetName(typeof(AchievementSherpa.Business.AchievementCategories), value);
+                string displayName = CategoryHelper.NiceEnumName((AchievementSherpa.Business.AchievementCategories)value);
+                if ( Model.RecommendedAchievements.Where( a => a.CategoryID == value).Count() > 0 )
+                {
+                %>
+            <div id="<%= name %>">
+        <% Html.RenderPartial("_PartialPage1", Model.RecommendedAchievements.Where( a => a.CategoryID == value || a.ParentCategoryID == value)); %>
+    </div>
+                
+                    <%
+                    }
+            }
+            
+         %>
+</div>
 
-    %>
-
-    </table>
     </div>
 </asp:Content>
 

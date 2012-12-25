@@ -13,19 +13,20 @@ using AchievementSherpa.Business.Parsers;
 using AchievementSherpa.PageParser;
 using AchievementSherpa.Business.Services;
 using StructureMap;
+using AchievementSherpa.WowApi;
 
 namespace AchievementSherpa.Business
 {
     class Program
     {
-        // /wow/en/character/kilrogg/debz/achievement#92
-        // /wow/en/character/kilrogg/debz/achievement#169:170
-
         static readonly string GuildFileName = "guilds.dat";
-        static bool parseAchivements = true;
+        static bool parseAchivements = false;
         static bool parseGuilds = false;
         private static bool restrictToKilrogg = true;
-        static int maxDaysOld = 30; 
+        static int maxDaysOld = 30;
+        private static bool rankAchievements = true;
+        private static bool deleteCharacters = false;
+        private static bool deleteAchievements = false;
         
         static void Main(string[] args)
         {
@@ -39,8 +40,22 @@ namespace AchievementSherpa.Business
                 // Parse new achievements from www.wowhead.com if the parse achievement flag is set
                 if (parseAchivements)
                 {
+                    // Remove achievements first
+                    if (deleteAchievements)
+                    {
+                        achievementRepository.DeleteAllAchievements();
+                    }
+                    AchievementListParser achievementParser = new AchievementListParser(achievementRepository);
+
+                    achievementParser.Parse(true);
                     WowHeadAchievementParser parser = new WowHeadAchievementParser(achievementRepository);
-                    parser.Parse(true);
+
+                    foreach (Achievement achievement in achievementRepository.FindAll())
+                    {
+                        parser.CheckForSeriesOfCriteria(achievement, false);
+                    }
+
+                    //parser.Parse(true);
                    //return;
                 }
 
@@ -51,6 +66,18 @@ namespace AchievementSherpa.Business
                 ICharacterService characterService = ObjectFactory.GetInstance<ICharacterService>();
                 ICharacterRepository characterRepository = ObjectFactory.GetInstance<ICharacterRepository>();
                 IGuildParser guildParser = ObjectFactory.GetInstance<IGuildParser>();
+
+                // Remove all characters to reset achivement rankings
+                if (deleteCharacters)
+                {
+                    characterRepository.DeleteAllCharacters();
+                }
+
+                if (rankAchievements)
+                {
+                    MongoAchievementService service = new MongoAchievementService();
+                    service.RankAchievements();
+                }
 
                 IList<Guild> guildsToParse = guildsToParseSource;
                 if (restrictToKilrogg)
@@ -64,7 +91,7 @@ namespace AchievementSherpa.Business
                     
                     IEnumerable<Character> roster = guildParser.ParserRoster("us", guild.Server, guild.Name).OrderByDescending( c=> c.CurrentPoints );
 
-                    Console.WriteLine("Parsing Guild {0} of {1} {2} of {3} guilds parsed", guild.Name, guild.Server, guildCounter, guildsToParse.Count);
+                    Console.WriteLine("{0} of {1} ({2} of {3})", guild.Name, guild.Server, guildCounter, guildsToParse.Count);
 
                     int counter = 1;
                     foreach (Character character in roster)
@@ -76,12 +103,18 @@ namespace AchievementSherpa.Business
                         }
                         try
                         {
-                            Console.WriteLine("\t{0} [{1} of {2}]",
-                                character.Name, counter, roster.Count());
+                            
                             Character existing = characterRepository.FindCharacter(character);
                             if (existing == null || DateTime.Now.Subtract(existing.LastParseDate.Value).Days >= maxDaysOld)
                             {
+                                Console.WriteLine("\t{0} [{1} of {2}]",
+                                character.Name, counter, roster.Count());
                                 characterService.UpdateCharacterDetails(character.Server, character.Name, character.Region);
+                            }
+                            else
+                            {
+                                Console.WriteLine("\t{0} [{1} of {2}] SKIPPED",
+                                character.Name, counter, roster.Count());
                             }
                         }
                         catch (Exception ex)

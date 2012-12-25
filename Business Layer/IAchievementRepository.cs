@@ -9,14 +9,15 @@ namespace AchievementSherpa.Business
     public interface IAchievementRepository
     {
 
-        Achievement FindByAchievementId(string achievementId);
-
+        
         IList<Achievement> GetAllInSeries(AchievementSeries series);
 
-        Achievement Find(string blizzardId);
+        Achievement Find(int blizzardId);
 
         void Save(Achievement achievement);
 
         IList<Achievement> FindAll();
+
+        void DeleteAllAchievements();
     }
 }

@@ -26,7 +26,7 @@ namespace AchievementSherpa.Data.MongoDb
             {
                 this.Achievements.forEach(function(achieved)
                     {
-                        emit(achieved.AchievementId, {count : 1 });
+                        emit(achieved.BlizzardID, {count : 1 });
                     });   
             }");
 
@@ -76,8 +76,8 @@ namespace AchievementSherpa.Data.MongoDb
             int maxRank = 0;
             for (int i = 0; i < rankings.Count; i++)
             {
-                string achievementId = rankings[i]["_id"].AsString;
-                Achievement achievement = AchievementRepository.FindByAchievementId(achievementId);
+                int achievementId = Convert.ToInt32(rankings[i]["_id"].AsDouble);
+                Achievement achievement = AchievementRepository.Find(achievementId);
                 if (achievement != null)
                 {
                     achievement.Rank = i + 1;

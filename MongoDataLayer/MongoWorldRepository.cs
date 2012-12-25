@@ -32,7 +32,7 @@ namespace AchievementSherpa.Data.MongoDb
             QueryDocument query = new QueryDocument();
             query.Add("Server", server);
             query.Add("Region", region);
-            return Collection.Find(query).Count();
+            return (int)Collection.Find(query).Count();
         }
         public IList<Character> ListCharactersOnServerByPoints(string region, string server, int start, int limit)
         {

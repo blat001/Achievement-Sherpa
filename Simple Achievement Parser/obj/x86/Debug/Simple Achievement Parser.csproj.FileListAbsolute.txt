@@ -2,7 +2,6 @@ C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\S
 C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\Simple Achievement Parser.pdb
 C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\HtmlAgilityPack.xml
-C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\obj\x86\Debug\Simple Achievement Parser.exe
 C:\Users\barry\documents\visual studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\obj\x86\Debug\Simple Achievement Parser.pdb
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\Simple Achievement Parser.exe.config
@@ -19,4 +18,11 @@ C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\S
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\AchievementSherpa.WowApi.dll
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\WowDotNetAPI.dll
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\AchievementSherpa.WowApi.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\obj\x86\Debug\Simple Achievement Parser.csprojResolveAssemblyReference.cache
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\MongoDB.Bson.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\MongoDB.Driver.dll
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\MongoDB.Bson.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\MongoDB.Bson.xml
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\MongoDB.Driver.pdb
+C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\MongoDB.Driver.xml
 C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\Simple Achievement Parser\bin\Debug\WowDotNetAPI.pdb

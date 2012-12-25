@@ -38,20 +38,25 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="WowDotNetAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WowDotNetAPI.0.2.8.2\WowDotNetAPI.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AchievementParser.cs" />
     <Compile Include="WowApiCharacterParser.cs" />
     <Compile Include="WowApiGuildParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\WowDotNetAPI\WowDotNetAPI\Explorers\Explorers.csproj">
+      <Project>{2a828141-9ef2-4a8a-8944-b2f2d1775cc9}</Project>
+      <Name>Explorers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Business Layer\AchievementSherpa.Business.csproj">
       <Project>{2F4D75FD-33D0-4CBC-8AFF-59CDB3523B5D}</Project>
       <Name>AchievementSherpa.Business</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

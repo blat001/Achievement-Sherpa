@@ -37,7 +37,7 @@ namespace AchievementSherpa.Business.Services
                 return _achievementCache[blizzardId];
             }
 
-            Achievement a = _achievementRepository.Find(blizzardId.ToString());
+            Achievement a = _achievementRepository.Find(blizzardId);
             _achievementCache[blizzardId] = a;
             return a;
         }
@@ -52,7 +52,7 @@ namespace AchievementSherpa.Business.Services
             IList<AchievedAchievement> existingAchievements = character.Achievements.ToList();
             while (counter < achievements.Count())
             {
-                if (existingAchievements.FirstOrDefault(a => a.AchievementId == achievements[counter]._id) == null)
+                if (existingAchievements.FirstOrDefault(a => a.BlizzardID == achievements[counter].BlizzardID) == null)
                 {
                     if (achievements[counter].Category != Achievement.FeatsOfStrengthCategory)
                     {
@@ -85,9 +85,9 @@ namespace AchievementSherpa.Business.Services
                 if (achievement.IsPartOfSeries)
                 {
                     // remove all the achivements from a series
-                    foreach (string seriesAchievement in achievement.Series.AchievementIds)
+                    foreach (int seriesAchievement in achievement.Series.AchievementIds)
                     {
-                        Achievement achievementToRemove = cleanedAchievements.Where(a => a._id == seriesAchievement).FirstOrDefault();
+                        Achievement achievementToRemove = cleanedAchievements.Where(a => a.BlizzardID == seriesAchievement).FirstOrDefault();
                         if (achievementToRemove != null)
                         {
                             Debug.WriteLine(string.Format("\tRemoving Achievment : {0}", achievementToRemove));
@@ -98,7 +98,7 @@ namespace AchievementSherpa.Business.Services
 
                     // Get Players highest achievement in series
                     Achievement nextAchievementInSeries = null;
-                    string highestAchievementId = character.GetHighestAchievementInSeries(achievement.Series);
+                    int highestAchievementId = character.GetHighestAchievementInSeries(achievement.Series);
                     
                     if (highestAchievementId != null)
                     {
@@ -113,11 +113,11 @@ namespace AchievementSherpa.Business.Services
 
                         if (nextAchievment < achievement.Series.AchievementIds.Count)
                         {
-                            nextAchievementInSeries = _achievementRepository.FindByAchievementId(achievement.Series.AchievementIds.ElementAt(nextAchievment));
+                            //nextAchievementInSeries = _achievementRepository.FindByAchievementId(achievement.Series.AchievementIds.ElementAt(nextAchievment));
                         }
                     }
                     else{
-                        nextAchievementInSeries = _achievementRepository.FindByAchievementId(achievement.Series.AchievementIds[0]);
+                        //nextAchievementInSeries = _achievementRepository.FindByAchievementId(achievement.Series.AchievementIds[0]);
                     }
 
                     Debug.WriteLine(string.Format("\tAdding Achievment : {0}", nextAchievementInSeries));

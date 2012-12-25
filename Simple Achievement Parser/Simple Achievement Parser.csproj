@@ -38,6 +38,12 @@
     <Reference Include="HtmlAgilityPack">
       <HintPath>..\..\..\..\..\Downloads\HtmlAgilityPack.1.4.0\HtmlAgilityPack.dll</HintPath>
     </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\mongocsharpdriver.1.6.1\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\mongocsharpdriver.1.6.1\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
     <Reference Include="SmartThreadPool">
       <HintPath>..\..\..\..\..\..\..\tools\smartthreadpool\bin\Windows\SmartThreadPool.dll</HintPath>
     </Reference>
