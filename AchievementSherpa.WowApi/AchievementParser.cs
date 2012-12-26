@@ -80,7 +80,12 @@ namespace AchievementSherpa.WowApi
             achievement.Description = achievementDetails.Description;
             foreach (AchievementCriteria criteria in achievementDetails.Criteria)
             {
-                achievement.Criteria.Add(criteria.Id);
+                Criteria details = new Criteria();
+                details.Description = criteria.Description;
+                details.Id = criteria.Id;
+                details.Max = criteria.Max;
+                details.OrderIndex = criteria.OrderIndex;
+                achievement.Criteria.Add(details);
             }
         }
 

@@ -93,8 +93,22 @@
     <Compile Include="StructureMapDependencyResolver.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\bootstrap-responsive.css" />
+    <Content Include="Content\css\bootstrap-responsive.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\font-awesome-ie7.css" />
+    <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\Main.css" />
+    <Content Include="Content\css\site.css" />
+    <Content Include="Content\font\fontawesome-webfont.svg" />
     <Content Include="Content\Images\peon.png" />
+    <Content Include="Content\img\backgrounds\classic-ss94-large.jpg" />
+    <Content Include="Content\img\backgrounds\wowx4-screenshot-01-large.jpg" />
+    <Content Include="Content\img\debut_dark.png" />
+    <Content Include="Content\img\debut_dark_%402X.png" />
+    <Content Include="Content\img\glyphicons-halflings-white.png" />
+    <Content Include="Content\img\glyphicons-halflings.png" />
     <Content Include="Content\js\TemplateLoader.js" />
     <Content Include="Content\templates\MainSearchView.htm" />
     <Content Include="Global.asax" />
@@ -114,7 +128,7 @@
     <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="Views\Home\All.aspx" />
-    <Content Include="Views\Player\Index.aspx" />
+    <Content Include="Views\Player\Index.old.aspx" />
     <Content Include="Views\Ranking\ServerRanking.aspx" />
     <Content Include="Views\Shared\AchievementBlock.ascx" />
     <Content Include="Views\Shared\RankingView.ascx" />
@@ -192,7 +206,18 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Player\_PartialPage1.cshtml" />
+    <Content Include="Views\Shared\_AchievementList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_BootstrapMaster.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Player\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font\fontawesome-webfont.eot" />
+    <Content Include="Content\font\fontawesome-webfont.ttf" />
+    <Content Include="Content\font\fontawesome-webfont.woff" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

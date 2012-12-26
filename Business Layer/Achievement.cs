@@ -37,7 +37,8 @@ namespace AchievementSherpa.Business
         public Achievement()
         {
             Chained = new List<Achievement>();
-            Criteria = new List<int>();
+            Criteria = new List<Criteria>();
+            SubAchievements = new List<int>();
         }
         public int Points
         {
@@ -82,7 +83,7 @@ namespace AchievementSherpa.Business
         }
 
 
-        public IList<int> Criteria
+        public IList<Criteria> Criteria
         {
             get;
             set;
@@ -159,5 +160,7 @@ namespace AchievementSherpa.Business
         }
 
         public int CategoryID { get; set; }
+
+        public List<int> SubAchievements { get; set; }
     }
 }

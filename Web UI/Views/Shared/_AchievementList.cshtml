@@ -1,0 +1,29 @@
+﻿@model IEnumerable<AchievementSherpa.Business.Achievement>
+<ul class="achievementList">
+    @foreach (var achievement in Model)
+    {
+        if (achievement == null)
+        {
+            continue;
+        }
+        <li class="achievementContainer">
+            <div class="row-fluid">
+                <div class="span2"><img src="http://media.blizzard.com/wow/icons/56/@(achievement.Icon).jpg" border="0" /></div>
+                <div class="span8"><a href="http://www.wowhead.com/achievement=@achievement.BlizzardID">@achievement.Name</a><br />
+            <span class="achdescription">@achievement.Description</span></div>
+                <div class="span2"><div class="achievementPoints">@achievement.Points</div></div>
+
+            </div>
+            <div class="row-fluid">
+                <ul class="achivementCriteria" id="double">
+                @foreach (var criteria in achievement.Criteria)
+                {
+                    <li>@criteria.Description</li>
+                }
+                    </ul>
+                </div>
+            
+            
+        </li>
+    }
+</ul>

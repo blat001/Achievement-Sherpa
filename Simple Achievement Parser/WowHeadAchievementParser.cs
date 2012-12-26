@@ -200,9 +200,9 @@ namespace AchievementSherpa.Business
                     seriesOrMeta = true;
                     Console.WriteLine("Found Meta Achivement : {0}, adding sub achivements", achievement.Name);
 
-                    if (achievement.Criteria == null)
+                    if (achievement.SubAchievements == null)
                     {
-                        achievement.Criteria = new List<int>();
+                        achievement.SubAchievements = new List<int>();
                     }
 
                     achievement.Criteria.Clear();
@@ -217,7 +217,7 @@ namespace AchievementSherpa.Business
                             Achievement requiredAchievement = _achievementRepository.Find(blizzardId);
                             if (requiredAchievement != null)
                             {
-                                achievement.Criteria.Add(requiredAchievement.BlizzardID);
+                                achievement.SubAchievements.Add(requiredAchievement.BlizzardID);
                                 Console.WriteLine("\t Criteria includes Achievement {0}", requiredAchievement.Name);
                             }
                         }

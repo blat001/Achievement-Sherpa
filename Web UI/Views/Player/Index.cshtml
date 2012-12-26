@@ -1,0 +1,89 @@
+﻿@model Web_UI.Models.Player
+@{
+    ViewBag.Title = Model.WowPlayer.Name;
+    Layout = "~/Views/Shared/_BootstrapMaster.cshtml";
+}
+
+<div class="row-fluid">
+    <div class="span8">
+        <div class="row-fluid">
+            <div class="span6">
+                <img src="@("http://" + Model.WowPlayer.Region.ToLowerInvariant() + ".battle.net/static-render/" + Model.WowPlayer.Region.ToLowerInvariant() + "/" + Model.WowPlayer.Thumbnail.Replace("avatar", "inset"))" alt="" />
+            </div>
+            <div class="span6">
+                <h3>@Model.WowPlayer.Name</h3>
+                <span class="@Model.WowPlayer.Class.ToLowerInvariant()">@Model.WowPlayer.Level @Model.WowPlayer.Race @Model.WowPlayer.Class</span><br />
+                <span class="guild">@Model.WowPlayer.Guild</span><br />
+                <span class="realm">@Model.WowPlayer.Server</span><br />
+                @Html.ActionLink("Refresh", "Parse", new { name = Model.WowPlayer.Name, server = Model.WowPlayer.Server, region = Model.WowPlayer.Region }, new { @class = "btn btn-success" })  <br />Last Parsed: @Model.WowPlayer.LastParseDate.Value.ToShortDateString()<br />
+            </div>
+        </div>
+    </div>
+    <div class="span4">
+        <h3 class="totalAchievementPoints">@Model.WowPlayer.TotalAchievementPoints <i class="icon-achievement"></i></h3>
+    </div>
+</div>
+
+<div class="row-fluid">
+
+    <div class="span4">
+        <ul id="achievementCategories">
+            <li><span data:category="top5">Recommended Achivements</span></li>
+            @foreach (int value in Enum.GetValues(typeof(AchievementSherpa.Business.AchievementCategories)))
+            {
+                string name = Enum.GetName(typeof(AchievementSherpa.Business.AchievementCategories), value);
+                string displayName = Web_UI.Models.CategoryHelper.NiceEnumName((AchievementSherpa.Business.AchievementCategories)value);
+                if (Model.RecommendedAchievements.Where(a => a.CategoryID == value || a.ParentCategoryID == value).Count() > 0)
+                {
+               
+                <li><span data:category="@name">@displayName (@Model.RecommendedAchievements.Where(a => a.CategoryID == value || a.ParentCategoryID == value).Count())</span></li>       
+                    
+                }
+            }
+
+
+        </ul>
+
+    </div>
+    <div class="span8">
+        <div id="top5">
+            <h3>Recommended Achievements</h3>
+            @{Html.RenderPartial("_AchievementList", Model.RecommendedAchievements.Take(5));}
+        </div>
+
+        @foreach (int value in Enum.GetValues(typeof(AchievementSherpa.Business.AchievementCategories)))
+        {
+            string name = Enum.GetName(typeof(AchievementSherpa.Business.AchievementCategories), value);
+            string displayName = Web_UI.Models.CategoryHelper.NiceEnumName((AchievementSherpa.Business.AchievementCategories)value);
+            if (Model.RecommendedAchievements.Where(a => a.CategoryID == value || a.ParentCategoryID == value).Count() > 0)
+            {
+                
+            <div id="@name" style="display : none">
+                <h3>@displayName</h3>
+                @{Html.RenderPartial("_AchievementList", Model.RecommendedAchievements.Where(a => a.CategoryID == value || a.ParentCategoryID == value));}
+
+            </div>
+                
+                    
+            }
+        }
+
+    </div>
+</div>
+
+<script>
+    var current
+
+    $(document).ready(function () {
+
+        current = $("div#top5");
+
+        $("ul#achievementCategories li span").click(function () {
+            var toShow = $(this).attr("data:category").replace('#', '');
+            current.hide();
+            current = $("div#" + toShow);
+            current.show();
+        });
+    });
+
+</script>

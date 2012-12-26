@@ -50,6 +50,7 @@
     <Compile Include="Achievement.cs" />
     <Compile Include="AchievementSeries.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="Criteria.cs" />
     <Compile Include="IAchievementRepository.cs" />
     <Compile Include="Parsers\IGuildParser.cs" />
     <Compile Include="Services\AchievementService.cs" />

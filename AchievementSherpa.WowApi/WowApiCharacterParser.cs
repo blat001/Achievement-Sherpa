@@ -65,6 +65,8 @@ namespace AchievementSherpa.WowApi
                     }
                 }
 
+                for (int i = 0; i < downloadedCharacter.Achievements.Criteria
+
                 return character;
             }
             catch (WebException we)

@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0066)http://twitter.github.com/bootstrap/examples/marketing-narrow.html -->
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    
+
+    <!-- Le styles -->
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/font-awesome.css")">
+    <link href="@Url.Content("~/Content/css/bootstrap.css")" rel="stylesheet">
+    <link href="@Url.Content("~/Content/css/site.css")" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        
+        color : #CCC;
+      }
+
+
+      .jumbotron .btn i { 
+    margin-right: 8px;  
+}
+
+      h1 {
+          font-family: 'Lobster', Georgia, Times, serif;
+          font-size: 70px;
+          line-height: 100px;
+          color : white;
+              text-shadow: 1px 1px 1px #ccc;
+
+      }
+
+      #personalizedRecommendations
+      {
+        margin-top: 20px;
+      }
+       
+      p {
+          font-family: 'Cabin', Helvetica, Arial, sans-serif;
+          font-size: 15px;
+          line-height: 25px;
+      }
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 20px;
+        border : 1px solid black;
+        background: url('@Url.Content("~/Content/img/debut_dark.png")') repeat 0 0;
+        border-radius: 10px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+     
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
+    @RenderSection("Header", false)
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="jumbotron">
+        <h1>Achievement Sherpa</h1>
+
+
+        
+
+
+
+        <p class="lead">Helping you find your next achievement.</p>
+          </div>
+
+          @RenderBody()
+         
+      </div>
+
+     
+      <div class="footer">
+        <p>© Company 2012</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+
+    <script src="@Url.Content("~/Content/js/jquery.backstretch.min.js")"></script>
+    <script src="@Url.Content("~/Content/js/localdata.js")"></script>
+    <Script>
+    //wowx4-screenshot-01-large.jpg
+
+    var backgrounds = Array('classic-ss94-large.jpg', 'wowx4-screenshot-01-large.jpg');
+
+    var selectedBackground = backgrounds[Math.floor(Math.random()*backgrounds.length)];
+
+    console.log("img/backgrounds/" + selectedBackground);
+
+    $.backstretch("@Url.Content("~/Content/")img/backgrounds/" + selectedBackground);
+    $(".realm"),autocomplete(servers);
+    </script>
+  
+
+</body></html>
