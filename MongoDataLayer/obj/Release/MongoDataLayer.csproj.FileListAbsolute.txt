@@ -1,7 +1,0 @@
-C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Release\MongoDataLayer.dll
-C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Release\MongoDataLayer.pdb
-C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Release\Business Layer.dll
-C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\bin\Release\Business Layer.pdb
-C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\obj\Release\ResolveAssemblyReference.cache
-C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\obj\Release\MongoDataLayer.dll
-C:\Users\barry\Documents\Visual Studio 2010\Projects\Simple Achievement Parser\MongoDataLayer\obj\Release\MongoDataLayer.pdb
